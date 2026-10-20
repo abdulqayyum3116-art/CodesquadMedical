@@ -1,0 +1,252 @@
+# CodeSquad AI Solutions — Full Reference
+
+> Complete, unabridged reference content for codesquad.ai: company overview, service pages, pricing, process, every case study, and blog articles in full. Intended for AI assistants, LLMs and research tools that need the full context of this site without crawling it page by page. For a short curated index with links only, see [/llms.txt](https://www.codesquad.ai/llms.txt).
+
+Domain: https://www.codesquad.ai
+Company: CodeSquad — AI automation & software development agency
+Founder & CEO: Shahzaib Hamid (PhD, Applied AI)
+Team: 10 engineers, based in Lahore, Pakistan
+Clients served: 20+ companies across the US, Canada, UK and UAE
+Contact: info@codesquad.ai · +1 (307) 396-4945 · https://calendly.com/code_squad/30min
+LinkedIn (founder): https://www.linkedin.com/in/shahzaibhamid/
+
+---
+
+## What CodeSquad Does
+
+CodeSquad AI Solutions builds connected patient growth systems for medical clinics, med spas, dental practices and plastic surgery practices — medical SEO, AEO & GEO for AI search, paid advertising (Google & Meta), website and landing page design, instant follow-up and CRM dashboards, built into the practice's existing stack. Positioning: "Found. Chosen. Booked." The pitch is explicitly "no rip-and-replace, no new tools to learn": CodeSquad connects to the booking system, practice software or CRM a client already uses rather than forcing a migration.
+
+Core capabilities (from the homepage "What We Do" section):
+- **Websites & software** — fast, modern sites, web apps and custom platforms built to convert and scale.
+- **CRM & dashboards** — every lead, deal and campaign tracked in one live view.
+- **Ads — Google & Meta** — intent-driven campaigns and landing pages.
+- **SEO · AEO · GEO** — get found on Google and recommended by AI Overviews, ChatGPT and Gemini.
+- **AI agents & automation** — instant follow-up, nurture and internal workflows that run without the client's team.
+- **Marketing intelligence** — spend, ROAS, LTV and content performance unified across every connected platform.
+
+By-the-numbers (from live client dashboards, cited on the homepage):
+- 20+ companies served
+- Lead response in about 60 seconds
+- 15+ platforms unified (ENERGYbits marketing-intelligence build)
+- 100% message delivery logged
+
+Clients/brands referenced publicly: iPromo, ENERGYbits, Gengyve USA, Modern Law, Kenetics Solutions, TriState Auto Sales, SettleIn, Mama's Compass, Debate Partners, Harmony Med Spa, CareInn Dental Clinic, RTM Kinetics, Law Signal.
+
+---
+
+## Founder — Shahzaib Hamid
+
+Founder & CEO of CodeSquad, PhD in Applied AI. Leads a team of 10 engineers building production AI systems — patient-growth automation, agentic workflows and marketing intelligence — for small and medium businesses across healthcare, legal, automotive and e-commerce.
+
+His PhD research applied deep learning to clinical gait analysis for remote patient care; healthcare is described as "where my research started," not just a client vertical.
+
+**At a glance:** 5+ years of applied AI practice · 10 engineers on the team · 6 peer-reviewed journal papers · 8 conference papers.
+
+**Healthcare work:**
+- *Clinical gait analysis (PhD research)* — Bi-LSTM and Transformer models estimating clinical gait parameters and inferring surgical events from single-camera video, with 98.81% gait-identification accuracy. Published in IEEE Access (2024) and ICT Express (2026).
+- *Agentic remote patient monitoring* — a multi-agent LLM system connecting patient intake, clinical data collection, monitoring and recovery tracking in one pipeline (see RTM Kinetics case study).
+- *Patient-growth systems for clinics* — ads, instant follow-up, nurture, booking and SEO connected into one system for med spas and dental practices (see Harmony Med Spa and CareInn Dental case studies).
+
+**Experience:**
+- Founder & CEO — CodeSquad (2021 – Now)
+- AI Expert — CODUP (2023 – 2024): AI and automation for healthcare, fintech and SaaS clients
+- AI Faculty & Researcher — Superior University (2016 – 2021): taught and researched AI, machine learning and computer vision
+
+**Education:** PhD, Applied AI (2019 – 2026) · MS, Computer Science (2015 – 2018) · BS, Electrical Engineering (2011 – 2015)
+
+**Selected publications:**
+- "A Hybrid Neural Network Approach to Gait Analysis for Remote Patient Care" — ICT Express, 2026 (sciencedirect.com/science/article/pii/S2405959526000111)
+- "A Sequential-Data Approach for Human Gait Parameter Estimation and Surgical Event Inference" — IEEE Access, 2024 (ieeexplore.ieee.org/abstract/document/10746399)
+
+---
+
+## How the Process Works (Build then Grow)
+
+CodeSquad's engagement model is two phases: a one-time **Build**, then a monthly **Grow** retainer. The same model applies across every industry, configured for it.
+
+**Phase 1 · Build (one-time):** audit what the client has, design the system, launch it, train the team. Includes: discovery call, audit & opportunity assessment, growth strategy, CRM & stack setup, website & landing pages, automations & follow-up flows, campaign launch, team training.
+
+**Phase 2 · Grow (monthly retainer):** run the system, optimize it every month, report exactly what it's producing. Includes: ad management, ongoing optimization, content & SEO·AEO·GEO, nurture & retention campaigns, reporting dashboard, ongoing support.
+
+**Pricing model:** a one-time build fee, then a monthly growth retainer with no long-term lock-in. Third-party tools and subscriptions (hosting, ad spend, CRM licences, SMS/email credits, APIs) are billed separately — not included in the package. No setup fee beyond the build; month-to-month; cancel anytime.
+
+**The 5-step delivery timeline** (same steps shown on the homepage and /process):
+1. **Discovery Call** — learn the business, workflows, goals and bottlenecks: where growth is leaking and why.
+2. **Opportunity Assessment** — map the highest-impact automation and AI opportunities, ranked by business value and ROI.
+3. **Build & Deploy** — implement the systems, AI agents and workflows directly into the stack already in use.
+4. **Launch & Train** — everything goes live, documented and connected, with the team trained to run it confidently.
+5. **Optimize & Scale** — keep improving and expanding the system as the business grows, as an ongoing AI partner.
+
+**Process-page FAQ:**
+- *How long does the build take?* Depends on scope (campaigns, pages, integrations needed). A timeline is given after the opportunity assessment, before any build work starts; campaigns only launch once tracking and follow-up are tested end to end.
+- *Is there a long-term contract?* No. The build is a one-time fee; after launch, clients move to a monthly growth retainer with no long-term lock-in.
+- *What's included, and what isn't?* Build covers audit, strategy, CRM/stack setup, website/landing pages, automations, campaign launch, team training. Retainer covers ad management, optimization, content & SEO/AEO/GEO, nurture/retention campaigns, reporting, support. Third-party tools (ad spend, CRM licences, SMS/email credits) are billed separately.
+- *Do I have to switch the software I already use?* No. CodeSquad builds into the existing stack — booking system, store platform or CRM — connecting what already works rather than migrating it.
+
+Most clients keep CodeSquad on after launch as their ongoing AI partner, with monthly strategy sessions and evolving systems.
+
+---
+
+## Industry Solutions
+
+One connected growth system, configured for four medical audiences: medical clinics, med spas & aesthetic clinics, dental practices, and plastic surgery practices. The shared wins: reach the right buyer, respond before anyone else, and never lose a lead already paid for — via campaigns built per offer, instant automated follow-up, and content that ranks and converts (SEO/AEO/GEO published from the same dashboard as leads and sales).
+
+Proof strip (from a live clinic dashboard, most recent 90-day window): about 60-second speed to lead · 4.25% click-through rate · $60 cost per lead · 100% email delivery.
+
+### Aesthetics / Medical Clinics (med spas, aesthetic clinics, laser clinics, cosmetic derm)
+
+Headline: "Every enquiry answered in 60 seconds. More booked patients." Treatment-based Google Ads, instant follow-up and booking in one system, built into the booking software already in use (e.g. PatientNow — no migration).
+
+Real client numbers cited (live client, 2-month window): 60+ leads generated · ~$50 cost per lead · 6–7 new patients booked · about 60-second lead response · 14-day automated nurture.
+
+Sample campaign types built for this audience: Local ("Med Spa Near Me – [City]", "Aesthetic Clinic – [Neighborhood]", "Med Spa Open Weekends"), Treatment (Medical Weight Loss/GLP-1, Botox & Fillers, Laser Hair Removal, Facials & Microneedling, IV Vitamin Therapy, Skin Tightening & Body Contouring), and Ranking plays (owning "Best Botox [City]", "Best Lip Filler [City]", "Best Med Spa [City]" via landing page + blog).
+
+Why-us pitch: "Tired of agencies that don't understand your practice?" — booked patients (not clicks) traced to the exact ad/keyword, no software switching required, three years with healthcare brands with health-ad compliance built in by default.
+
+FAQ highlights: No need to switch booking system (Harmony kept PatientNow). Response within seconds day or night by SMS/email, with a 14-day nurture that stops the instant a patient books. Pricing is a one-time build fee + monthly growth retainer, no long-term lock-in; third-party tools billed separately. Campaigns follow Google's restricted-health-advertising rules; conversions only count confirmed leads.
+
+### Clinics & Dental Practices (small medical clinics, dental practices)
+
+Headline: "Every patient enquiry answered in 60 seconds. A fuller appointment book." Local Google Ads, instant follow-up and online booking built into the practice software already in use. Same real-client numbers as Aesthetics (60+ leads/2 months, ~$50 CPL, 6–7 new patients, ~60s response, 14-day nurture) — drawn from the same Harmony Med Spa system example, shown here for the clinics/dental audience.
+
+Sample campaigns — Medical clinic track: Clinic Near Me, Walk-In Clinic, Doctor Accepting New Patients, Weight Loss Program (GLP-1), IV Therapy & Wellness, Physio & Back Pain, Health Check-Ups, Hormone Replacement Therapy, Pediatric & Family Care, plus "Best Clinic/Weight Loss Clinic/Walk-In Clinic [City]" ranking plays.
+Sample campaigns — Dental track: Dentist Near Me, Weekend Dentist, Dental Implants, Invisalign & Aligners, Teeth Whitening & Veneers, Emergency Dental, Root Canal Therapy, Pediatric Dentistry, plus "Best Dentist/Implant Dentist/Invisalign [City]" ranking plays.
+
+Why-us pitch: "Tired of agencies that have never run a clinic?" — booked appointments traced to ad/keyword/campaign, keep existing practice-management/scheduling software, campaigns for check-ups/implants/aligners/urgent visits run within health-advertising rules from day one.
+
+Proof quotes: Harmony Med Spa ("CodeSquad connected our ads, CRM and follow-up into one system... nothing slips through"), CareInn Dental Clinic ("We went live with the whole system already running... the schedule filled from day one").
+
+FAQ highlights mirror the Aesthetics page: no software switch required, seconds-fast response with 14-day nurture, one-time build fee + monthly retainer pricing with no lock-in, health-advertising-rule compliant.
+
+## Case Studies (Full Text)
+
+### Harmony MedSpa — Patient Growth Automation for Medical Spas
+**Industry:** Medical Aesthetics · **Services:** Automation, SEO · **URL:** /case-studies/harmony-medspa-patient-growth-automation
+
+Stats: 20+ hours/week saved on manual follow-up · 24/7 automated lead capture and follow-up · 5-touch structured follow-up for non-booking leads · 1 live dashboard.
+
+**Challenge:** Harmony MedSpa delivered excellent patient care, but lead management depended heavily on manual follow-up. Enquiries arrived around the clock via website forms, phone, Google Ads and other channels; because the inbox was checked manually between appointments, potential patients could wait hours for a response. There was no structured follow-up for people who enquired but didn't book — once a lead went cold it was often never contacted again. Past patients weren't systematically re-engaged, rebooking reminders were inconsistent, and referrals weren't tracked end to end. Management had no single view of leads, communications, follow-up status or marketing performance. The clinical experience was strong; the operational challenge was speed, consistency and visibility.
+
+**Solution:** CodeSquad built a connected system that captures every lead, responds within 60 seconds, follows up automatically over 14 days, reactivates past patients, and manages rebooking and referrals — all visible on one live dashboard used daily. Stack: Website + Make.com + Airtable + Mandrill + Mailchimp + PatientNow + custom dashboard.
+
+**Key capabilities:** Capture (every lead across channels) · Respond & Nurture (automated across 14 days) · Track (full visibility in one dashboard).
+
+**Modeled revenue estimate** (illustrative, based on published industry benchmarks, not Harmony's reported figures): manual follow-up typically books 8–12% of enquiries; automated 60-second response with structured follow-up books 25–35%. Average med spa visit runs $420–500. For a clinic receiving 80 enquiries/month: before ≈ 8 booked appointments, after ≈ 22 booked appointments, difference ≈ 14 appointments/month ≈ $5,900–7,000 in additional first-visit revenue.
+
+**Before → After:** Response time: hours → under 60 seconds. Follow-up: 20+ hrs/week → under 2. Non-booker follow-up: none → 5-touch automated sequence. Past-patient re-engagement: none → automated by treatment cycle. Visibility: multiple tools → 1 live dashboard.
+
+**Quote:** "CodeSquad has done great work transitioning us from fragmented follow-up to a fully automated system." — Hayden, Harmony MedSpa
+
+**Conclusion:** The missing piece was never treatment quality — it was a reliable system for responding, following up, re-engaging and tracking every patient opportunity, built without replacing the clinic's existing booking process.
+
+### CareInn Dental Clinic — Patient Growth Automation for Dental Clinics
+**Industry:** Dental Care · **Services:** Automation, SEO, Patient Growth · **URL:** /case-studies/careinn-dental-clinic
+
+Stats: system live before the first patient (from day one) · 24/7 automated lead capture and follow-up · 5 touches of structured follow-up over 14 days · 1 live dashboard from day one.
+
+**Challenge:** CareInn launched with no existing patient pipeline, no history of leads, no established follow-up habits and no base of returning patients. Every new patient had to come from website enquiries, phone calls or referrals — with real risk of losing early momentum before the clinic built a reputation, since there was no existing base to fall back on.
+
+**Solution:** CodeSquad built CareInn's patient-growth system from the ground up, live before day one of operation. It captures every lead, responds within 60 seconds, follows up automatically over 14 days, and gives the team full visibility. Stack: Website + Make.com + Airtable + SMS + Email + custom dashboard.
+
+**Key capabilities:** Launch-ready (live before the first patient) · Respond & Nurture (every enquiry answered and followed up automatically) · Grow (patient volume tracked and growing from day one).
+
+**Before → After:** Patient pipeline: none at launch → live from day one. Response time: no process → under 60 seconds. Follow-up: none → 14-day automated sequence. Visibility: none → 1 live dashboard. Patient volume: starting from zero → growing steadily since launch.
+
+**Conclusion:** CareInn never had a gap to fix — every enquiry since launch has gone through the same connected pipeline (captured, answered, followed up, tracked in one place), which is why patient volume has grown since day one.
+
+**FAQ:** Will this replace our booking system? No — it wraps around the existing system. What if we already have a marketing team? The Dashboard tier fits teams that just need visibility. How long to launch? 2–3 weeks.
+
+### RTM Kinetics — Patient Management & Remote Monitoring for Physical Therapy
+**Industry:** Remote Patient Monitoring · **Services:** Patient CRM, Remote Monitoring, Automation · **URL:** /case-studies/rtm-kinetics
+
+Stats: 1 CRM for the full patient lifecycle · automated reconnect campaigns for quiet leads · real-time recovery and feedback tracking.
+
+**Challenge:** RTM Kinetics needed to manage the full patient relationship — from first enquiry through active rehabilitation — but it lived across disconnected tools. Leads, contact history and reconnect campaigns for patients who'd gone quiet were tracked separately from the exercise/recovery data therapists needed. Patient feedback was collected inconsistently, making it hard to spot problems early or show program impact.
+
+**Solution:** A connected system spanning the full patient lifecycle. It manages the patient CRM end to end — capturing leads, automating reconnect campaigns for quiet patients, and collecting structured feedback — while syncing with the platform's remote-monitoring tools so therapists have one place to see the full picture. Stack: React/Node.js + PostgreSQL + SMS/Email automation + remote monitoring integration.
+
+**Key capabilities:** Capture (every lead tracked through one CRM pipeline) · Reconnect (automated re-engagement for quiet patients) · Monitor (feedback and recovery data in one dashboard).
+
+**Quote:** "I had the pleasure of working with Shahzaib on developing an AI platform, where he showcased exceptional technical skills, creativity, and professionalism... highly collaborative, communicative, and consistently delivered high-quality work on time." — Kennard Smith, RTM
+
+## Blog Articles (Full Text / Extended Summaries)
+
+### SEO Is No Longer Enough: A Beginner's Guide to AEO and GEO in the Age of AI Search
+*AEO / SEO · August 10, 2026 (v2) and July 27, 2026 (original) · /blog/seo-aeo-geo-ai-search-guide-2 and /blog/seo-aeo-geo-ai-search-guide*
+
+**Traditional SEO** (Search Engine Optimization) has four areas: Technical SEO (fast loading, mobile-friendly, crawlable, HTTPS, clean architecture, canonical URLs, sitemaps, structured data), On-page SEO (titles, headings, keywords, URLs, internal links, alt text, meta descriptions), Off-page SEO (backlinks, brand mentions, reviews, directories, partnerships, media coverage), Content SEO (service pages, comparison guides, tutorials, case studies, FAQs, original research).
+
+**AEO (Answer Engine Optimization)** structures content so search engines and AI assistants can identify a clear, direct answer to a question — e.g. leading with "Lead follow-up automation is a system that automatically responds to, qualifies, nurtures, and routes new enquiries using tools such as email, SMS, CRM updates, and internal notifications," then expanding. Answer engines include Google featured snippets/AI Overviews, voice assistants, ChatGPT search, Bing Copilot. Google explicitly says content doesn't need to be chopped into unnatural tiny chunks — it should still be written primarily for people.
+
+**GEO (Generative Engine Optimization)** increases the likelihood a brand/site/product is discovered, trusted, cited or recommended in AI-generated answers, which often synthesize one combined response from multiple sources rather than ten links. GEO rewards genuine first-hand expertise, original examples, accurate/consistent company information, author credentials, independent reviews, and case studies with specific methodology — generic summarized content is easy to reproduce and easy to replace.
+
+**SEO vs AEO vs GEO:** SEO gets the page discovered and ranked; AEO makes the content the best direct answer; GEO makes the brand/content a trusted source in generative answers. Google treats generative-AI optimization as part of SEO, not a separate discipline, and warns against "AEO/GEO hacks" like unnecessary AI-specific files or buying artificial mentions.
+
+**10-step optimization checklist:** (1) start with real customer questions from sales/support/ops; (2) answer the main question early, before a long intro; (3) publish first-hand expertise from real project work; (4) create detailed, honestly-numbered case studies; (5) strengthen your brand entity (consistent NAP, leadership, social profiles, Google Business Profile); (6) use structured data correctly (Organization, LocalBusiness, Article, Product, Service, Review, FAQ schema) — not a shortcut, but accurate markup; (7) make the site crawlable (robots.txt, noindex, canonicals, JS rendering, sitemap accuracy); (8) build authority beyond the website (reviews, partnerships, podcasts, directories, earned media); (9) keep important content current; (10) measure business results (impressions, CTR, qualified enquiries, assisted conversions, branded search, AI citations), including Search Console's generative-AI reporting where available.
+
+**Common mistakes:** treating SEO as obsolete, publishing large volumes of generic AI content, optimizing only for machines at the expense of readability, expecting guaranteed AI citations (no platform can promise a specific citation every time).
+
+**FAQ:** Is SEO being replaced by AI search? No — Google's generative features run on its core ranking/quality systems; AEO/GEO extend SEO, they don't replace it. Can a business "rank" in ChatGPT? Not via fixed numbered positions — improve chances through accessible, authoritative, relevant content and accurate brand information; inclusion isn't guaranteed. Do I need an llms.txt file for GEO? Google states llms.txt neither improves nor harms visibility in Google Search or its generative features; other platforms may treat it differently, so base implementation on documented platform requirements rather than marketing claims. Is AEO only FAQ pages? No — it applies to service pages, guides, product pages, comparisons and support docs generally. How long does AEO/GEO take? No universal timeline; depends on technical health, authority, competition, content quality and how fast platforms re-crawl.
+
+### How Businesses Are Losing Money Without Realizing It: The Hidden Cost of Slow Lead Response
+*AI Automation · August 7, 2026 · /blog/how-businesses-lose-money-slow-lead-response*
+
+A business can spend heavily on Google Ads, generate plenty of leads, and still lose money if it responds too slowly — a prospect (e.g. someone searching for a med spa) often contacts several businesses at once, and whichever responds first has the advantage. Ideally, communication should begin almost immediately: a confirmation message by SMS/email the moment a form is submitted, then a scheduled follow-up (call or SMS) the next day if there's no reply — leads shouldn't disappear just because nobody followed up fast enough.
+
+**The bigger problem is fragmented visibility:** as a business grows, Google Ads, SMS, calls, email marketing, content and SEO often live in separate systems, so a founder asking "how are our ads performing?" gets conflicting answers (ad quality vs. lead quality vs. sales follow-up) with no way to verify which explanation is right.
+
+**The fix: a centralized business dashboard** tracking ad spend/performance, lead generation, lead response times, SMS activity, calls, email marketing, offers, customer responses, content performance and SEO activity in one place — so decisions are based on actual performance data rather than individual opinions, and underperforming spend can be identified and reallocated.
+
+**You don't need to automate everything** — identify what's actually costing money, where opportunities are lost, what you currently can't see, and which processes should be faster, then build systems around those specific points rather than chasing every new tool.
+
+**Two things to focus on:** (1) respond to leads quickly — timing determines whether a prospect stays or moves to a competitor; (2) create visibility across the business — you can't manage what you can't see across ads, calls, SMS, email, content and SEO.
+
+**Bottom line:** businesses often lose money not from too few leads but from slow response to the leads they already paid for, and from spending on activities they can't properly evaluate because data is scattered. Fix: respond faster, measure what matters, centralize visibility, identify what works, reduce what doesn't.
+
+### The Fully-Booked Business
+*AI Automation · August 13, 2026 · /blog/the-fully-booked-business*
+
+Most owners assume slow bookings mean they need more marketing — usually they don't. A guide and ten-question self-assessment for med spas, clinics, salons and wellness businesses covering marketing, operations and branding, pinpointing the gaps where interested people quietly disappear before ever becoming a booked appointment.
+
+### From "Microneedling Near Me" to Booked: The SEO Strategy for Med Spas
+*AI Automation · September 21, 2026 · /blog/microneedling-seo-med-spas*
+
+Patients search for microneedling at different decision stages — location-based searches, treatment comparisons, pricing queries — so a med spa's job is to appear in those searches and give visitors a compelling reason to book.
+
+**Build a dedicated microneedling service page** rather than folding it into a generic services list: explain the treatment, the concerns it addresses, the patient experience, recovery guidance, FAQs and scheduling. Write for patient understanding first, search engines second. Create separate pages for distinct variations (e.g. RF microneedling) since they target different search intent.
+
+**Don't ignore local SEO** — med spas win on local visibility, not national rankings. Optimize the Google Business Profile, website location data, reviews and service info for the specific practice location; local results and map packs often outrank organic listings for location-based queries.
+
+**Create content around real patient questions** — effectiveness for scars, session frequency, sensation during the procedure, post-treatment expectations, technique differences, cost — written to genuinely help, with natural paths into the relevant treatment page rather than keyword stuffing.
+
+**SEO is no longer just about Google** — patients increasingly use AI tools to research and compare, so sites need to be clearly understandable to both search engines and AI systems regarding business identity, treatments, location and expertise. This combines SEO, AEO and GEO, with an emphasis on trustworthy content over keyword manipulation.
+
+**Google Ads complement SEO** — SEO builds organically over time; ads capture high-intent searches immediately. The funnel: Search → Ad → Landing Page → Lead → Follow-Up → Booking. Landing pages need clear messaging, trust indicators and a consultation-booking mechanism.
+
+**Getting the lead isn't enough** — delayed response cools interest even after a successful ad click. This is why lead generation needs to be paired with automated notifications, CRM, email/SMS sequences, appointment workflows and tracking so the team can respond fast.
+
+**CodeSquad's approach:** integrate SEO, Google Ads, local search, AI-focused strategy, automation and conversion systems into one framework — examining the full patient pathway (SEO supporting Maps visibility, content supporting services, ads directing to the right pages, leads enabling follow-up, analytics tracking opportunity) rather than treating each marketing channel in isolation.
+
+---
+
+## Site Map (indexable pages)
+
+- / — Home
+- /industry — Industry Solutions overview
+- /aesthetics — Aesthetics / Medical Clinics
+- /clinics — Clinics & Dental
+- /dental — Dental practices
+- /plastic-surgery — Plastic surgery practices
+- /fcb — Found. Chosen. Booked. (the method, guarantee and plans)
+- /services — Services hub
+- /services/{seo,aeo-geo,paid-ads,website-design,follow-up-crm} — individual service pages
+- /work-with-us — Application form
+- /process — How the growth system works
+- /founder — Founder profile
+- /inquiry — Contact / consultation request
+- /blog — Blog index
+- /blog/{slug} — individual articles (see Blog section above)
+- /case-studies — Case studies index
+- /case-studies/{slug} — individual case studies (see Case Studies section above)
+
+Non-indexable (disallowed in robots.txt): /dashboard/ (password-protected internal content admin) and /admin/ (internal tooling).

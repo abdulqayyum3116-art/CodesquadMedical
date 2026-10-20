@@ -1,0 +1,103 @@
+/* ==========================================================================
+   Dark mode. The theme is set on <html data-theme="light|dark"> before paint
+   (inline script in app/layout.js): a saved choice wins, otherwise the OS
+   setting. Tokens flip here; a few components that hard-code light surfaces
+   get explicit dark treatments below. The dashboard always stays light.
+   ========================================================================== */
+
+:root{
+  --ds-band:#1B1B3A;          /* dark bands stay dark in both themes */
+  --ds-on-accent:#1B1B3A;     /* text on orange chips/circles */
+  --ds-cta-grad:linear-gradient(160deg,var(--ds-butter),#FFD3C0,var(--ds-butter));
+  color-scheme:light;
+}
+
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --ds-bg:#14142A;
+  --ds-bg-alt:#1A1A35;
+  --ds-surface:#1F1F3D;
+  --ds-band:#0E0E20;
+  --ds-ink:#FFF4E8;
+  --ds-ink-2:#E8DFD3;
+  --ds-text:#D8D5E6;
+  --ds-muted:#ABABC8;
+  --ds-line:rgba(255,244,232,.12);
+  --ds-line-strong:rgba(255,244,232,.22);
+
+  --ds-accent:#F0752F;
+  --ds-accent-deep:#FFA06B;     /* orange text on dark (AA) */
+  --ds-accent-soft:rgba(240,117,47,.18);
+  --ds-accent-on-dark:#FFB48A;
+  --ds-accent-2:#9D88FF;
+  --ds-accent-2-ink:#BBA9FF;
+  --ds-accent-2-soft:rgba(107,79,216,.24);
+
+  --ds-on-dark:#FFF4E8;
+  --ds-on-dark-muted:#ABABC8;
+  --ds-shadow-sm:0 10px 26px -10px rgba(0,0,0,.6);
+  --ds-shadow-md:0 22px 44px -18px rgba(0,0,0,.65);
+  --ds-cta-grad:linear-gradient(160deg,#2C2142,#3B2433 55%,#2C2142);
+
+  /* legacy aliases used by globals.css */
+  --line:rgba(255,244,232,.14);
+  --cream-2:#22223F;
+}
+
+/* Logos: dark-text logo on light, light-text logo on dark */
+.logo-for-dark{display:none !important}
+[data-theme="dark"] .logo-for-light{display:none !important}
+[data-theme="dark"] .logo-for-dark{display:block !important}
+
+/* Closing CTA cards: butter gradient -> deep warm gradient */
+[data-theme="dark"] :is(.hm-final-card,.in-final-card,.sv-final-card,.rz-final-card,.cs-study-cta>.cs-container,.cs-ready__inner){background:var(--ds-cta-grad) !important;border-color:var(--ds-line) !important}
+
+/* Text that sits on solid orange stays dark */
+:is(.hm-step-n,.sv-steps span,.fc-g-seal,.hm-why-card--accent .hm-why-n,.fc-g-seal span){color:var(--ds-on-accent)}
+
+/* Dark bands get a hairline so they separate from the dark page */
+[data-theme="dark"] :is(.ds-dark,.sec.dark,.fc-g-card,.hm-why-card--accent,.fc-plan--dark,.ip-journey,.hm-ind-type,.in-ch--dark){border:1px solid var(--ds-line)}
+[data-theme="dark"] .ds-section.ds-dark,[data-theme="dark"] .sec.dark,[data-theme="dark"] .in-ch--dark{border-inline:0}
+
+/* Buttons on dark bands: keep the cream button so it stands out */
+[data-theme="dark"] :is(.ds-dark,.sec.dark,.fc-plan--dark,.in-ch--dark,.inq-sec) :is(.ds-btn,.btn-dark,.btn-blue){background:var(--ds-ink);color:#14142A;border-color:var(--ds-ink)}
+
+/* Header + mobile panel */
+[data-theme="dark"] #header.sh.scrolled,[data-theme="dark"] #header.sh.is-open{box-shadow:0 8px 24px -16px rgba(0,0,0,.8)}
+[data-theme="dark"] .sh-toggle{background:var(--ds-surface)}
+[data-theme="dark"] .sh-link:hover,[data-theme="dark"] .sh-caret:hover,[data-theme="dark"] .sh-has-menu.is-open .sh-caret{background:rgba(255,244,232,.06)}
+[data-theme="dark"] .sh-scrim{background:rgba(0,0,0,.5)}
+
+/* Form states */
+[data-theme="dark"] .wu-summary{background:rgba(194,55,46,.18);border-color:rgba(255,140,130,.35);color:#FFC2BC}
+[data-theme="dark"] :is(.wu-err,.inq-err){color:#FF9A90}
+[data-theme="dark"] .ds-input::placeholder,[data-theme="dark"] .ds-textarea::placeholder,[data-theme="dark"] .field input::placeholder,[data-theme="dark"] .field textarea::placeholder{color:#8585A6}
+[data-theme="dark"] .wu-field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23FFF4E8' stroke-width='1.8' stroke-linecap='round'/%3E%3C/svg%3E")}
+
+/* Photos and screenshots: a touch dimmer so they don't glare */
+[data-theme="dark"] main img{filter:brightness(.92)}
+
+/* Footer */
+[data-theme="dark"] .cs-footer__card{background:var(--ds-bg-alt) !important}
+
+/* Theme toggle button (components/ThemeToggle.js) */
+.sh-theme{display:inline-grid;place-items:center;width:42px;height:42px;border-radius:50%;border:1.5px solid var(--ds-line-strong);background:transparent;color:var(--ds-ink);cursor:pointer;transition:border-color .2s,background .2s}
+.sh-theme:hover{border-color:var(--ds-ink)}
+.sh-theme svg{width:19px;height:19px}
+.sh-theme .i-sun{display:none}
+[data-theme="dark"] .sh-theme .i-sun{display:block}
+[data-theme="dark"] .sh-theme .i-moon{display:none}
+
+/* Dashboard keeps the light palette whatever the site theme */
+[data-theme="dark"] .dash{
+  color-scheme:light;
+  --ds-bg:#FFFBF5;--ds-bg-alt:#F7F0E6;--ds-surface:#FFFFFF;--ds-band:#1B1B3A;
+  --ds-ink:#1B1B3A;--ds-ink-2:#2A2A4F;--ds-text:#33334F;--ds-muted:#5D5D78;
+  --ds-line:rgba(27,27,58,.12);--ds-line-strong:rgba(27,27,58,.24);
+  --ds-accent-deep:#B94E14;--ds-accent-soft:#FFE3D2;--ds-accent-2-ink:#5A3EC4;--ds-accent-2-soft:#ECE6FF;
+  background:#FFFBF5;color:#33334F;
+}
+
+/* Primary buttons turn cream in dark mode, so their label must be dark (legacy rules hard-code #fff) */
+[data-theme="dark"] :is(.ds-btn,.btn-dark,.btn-blue,.cs-btn--primary,.nav-links .btn-dark){color:#14142A !important}
+[data-theme="dark"] :is(.ds-btn,.btn-dark,.btn-blue,.cs-btn--primary) svg{color:currentColor !important;stroke:currentColor}

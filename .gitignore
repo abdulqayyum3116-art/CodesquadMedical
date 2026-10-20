@@ -1,0 +1,22 @@
+/node_modules
+/.next
+/out
+/build
+npm-debug.log*
+.DS_Store
+/legacy-static
+/.vercel
+.vercel
+
+# secrets: env files (the names-only template is committed)
+.env
+.env.*
+!.env.example
+.env.local
+admin/password.txt
+
+# local-dev lead submissions (personal data)
+content/leads.json
+
+# client document, not part of the site
+*.docx

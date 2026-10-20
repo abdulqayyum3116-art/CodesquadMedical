@@ -1,0 +1,100 @@
+/* ==========================================================================
+   Legacy theme bridge: restyles the older page templates (case studies,
+   blog, aesthetics/clinics, process, founder, inquiry, 404)
+   so they match the design system without rewriting their markup.
+   Loaded after design-system.css.
+   ========================================================================== */
+
+/* ---- Heroes: navy + glow -> cream editorial -------------------------------- */
+.pg-hero,.ind-hero:not(.ind-hero--video),.title-navy,.fd-hero{background:var(--ds-bg) !important;color:var(--ds-ink);border-bottom:1px solid var(--ds-line);position:relative;overflow:hidden}
+.pg-hero::after,.ind-hero:not(.ind-hero--video)::after,.fd-hero::after{content:"";position:absolute;right:-6%;bottom:-18%;width:min(520px,52vw);aspect-ratio:2/1;pointer-events:none;background:no-repeat center/contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Cpath d='M6 170 C 80 40, 190 20, 250 90 S 360 170, 394 30' fill='none' stroke='%23F0752F' stroke-width='10' stroke-linecap='round'/%3E%3C/svg%3E");opacity:.85}
+.pg-hero h1,.pg-hero .display,.ind-hero:not(.ind-hero--video) h1,.title-navy h1,.title-navy .display,.fd-hero h1{color:var(--ds-ink) !important;font-family:var(--ds-font-display);font-weight:var(--ds-fw-display);letter-spacing:-.02em}
+.pg-hero p,.pg-hero .lead,.ind-hero:not(.ind-hero--video) p.lead,.title-navy p{color:var(--ds-muted) !important}
+.pg-hero .eyebrow,.ind-hero:not(.ind-hero--video) .eyebrow,.title-navy .eyebrow{color:var(--ds-accent-deep) !important}
+.ind-hero:not(.ind-hero--video) .btn-ghost,.pg-hero .btn-ghost{color:var(--ds-ink) !important;border-color:var(--ds-ink) !important}
+.ind-hero:not(.ind-hero--video) .btn-ghost:hover,.pg-hero .btn-ghost:hover{background:var(--ds-ink) !important;color:var(--ds-bg) !important}
+.pg-hero .btn-outline-light,.title-navy .btn-outline-light{color:var(--ds-ink);border-color:var(--ds-ink)}
+.pg-hero>.wrap,.pg-hero .wrap,.title-navy .wrap,.title-navy .cs-container{position:relative;z-index:1}
+.title-navy{padding-top:calc(76px + clamp(40px,6vw,88px)) !important}
+.title-navy::after{content:"";position:absolute;right:-6%;bottom:-24%;width:min(460px,46vw);aspect-ratio:2/1;pointer-events:none;opacity:.8;background:no-repeat center/contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Cpath d='M6 170 C 80 40, 190 20, 250 90 S 360 170, 394 30' fill='none' stroke='%23F0752F' stroke-width='10' stroke-linecap='round'/%3E%3C/svg%3E")}
+.title-navy :is(h1,h2,.cs-heading h2,.cs-title){color:var(--ds-ink) !important;font-family:var(--ds-font-display) !important;font-weight:var(--ds-fw-display) !important;letter-spacing:-.02em !important}
+.title-navy :is(p,.cs-heading p){color:var(--ds-muted) !important}
+.title-navy .cs-eyebrow{color:var(--ds-accent-deep) !important;font-family:var(--ds-font-body) !important}
+.title-navy .cs-cats :is(button,a,span){background:transparent !important;color:var(--ds-ink) !important;border:1.5px solid var(--ds-line-strong) !important;border-radius:var(--ds-r-pill) !important}
+.title-navy .cs-cats :is(button,a,span):hover{border-color:var(--ds-ink) !important}
+.title-navy .cs-cats :is(.on,.active,[aria-pressed="true"]){background:var(--ds-ink) !important;color:var(--ds-bg) !important;border-color:var(--ds-ink) !important}
+
+/* Video heroes (aesthetics / clinics): keep the footage, use the ink veil */
+.ind-hero--video .ind-hero-veil,.co-hero-veil{background:linear-gradient(90deg,rgba(21,21,43,.86),rgba(21,21,43,.55) 60%,rgba(21,21,43,.3)) !important}
+.ind-hero--video h1,.co-hero h1{font-family:var(--ds-font-display);font-weight:var(--ds-fw-display);letter-spacing:-.02em}
+.ind-hero--video .eyebrow{color:var(--ds-accent-on-dark) !important}
+
+/* ---- Dark bands: stock photo + aurora glow -> flat ink with a teal curve ----- */
+.sec.dark{background-image:none !important;background-color:var(--ds-band) !important}
+.sec.dark::before{display:none !important}
+.sec.dark::after{content:"" !important;animation:none !important;filter:none !important;background:no-repeat center/contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Cpath d='M6 170 C 80 40, 190 20, 250 90 S 360 170, 394 30' fill='none' stroke='%23FFB48A' stroke-width='8' stroke-linecap='round'/%3E%3C/svg%3E") !important;width:min(460px,50vw) !important;height:auto !important;aspect-ratio:2/1;right:-6% !important;bottom:-10% !important;top:auto !important;left:auto !important;opacity:.55}
+.sec.dark .display,.sec.dark h2{font-family:var(--ds-font-display);font-weight:var(--ds-fw-display);letter-spacing:-.02em}
+.sec.dark .eyebrow{color:var(--ds-accent-on-dark) !important}
+
+/* Cream bands use the design-system alternate tone */
+.creambg{background:var(--ds-bg-alt) !important}
+
+/* ---- Case study detail: cover photo becomes an inset, rounded frame -------- */
+.cs-study-hero--cover{margin:calc(76px + 12px) var(--ds-gutter) 0;border-radius:var(--ds-r-organic);overflow:hidden;min-height:min(760px,84vh);box-shadow:var(--ds-shadow-md);border-bottom:0}
+.cs-study-hero--dark .cs-study-hero__contrast{background:linear-gradient(90deg,rgba(21,21,43,.86),rgba(21,21,43,.55) 55%,rgba(21,21,43,.2)) !important}
+.cs-study-hero h1{font-family:var(--ds-font-display) !important;font-weight:var(--ds-fw-display);letter-spacing:-.025em;line-height:.95}
+.cs-study-hero--dark .cs-study-back,.cs-study-hero--dark .cs-study-label{color:var(--ds-accent-on-dark) !important}
+.cs-study-hero--dark .cs-study-intro,.cs-study-hero--dark .cs-study-meta span{color:#E6E6F2}
+.cs-study-heading h2,.cs-study-section h2,.cs-study h2{font-family:var(--ds-font-display);font-weight:var(--ds-fw-display);letter-spacing:-.02em}
+@media (max-width:520px){.cs-study-hero--cover{margin:calc(66px + 8px) 12px 0;border-radius:var(--ds-r-lg)}}
+
+/* Closing CTA on case studies + legacy pages -> butter card like the new pages */
+.cs-study-cta,.cs-ready{background:var(--ds-bg) !important;padding:var(--ds-section-y) 0 !important}
+.cs-study-cta>.cs-container,.cs-ready__inner{position:relative;overflow:hidden;max-width:var(--ds-max) !important;padding:clamp(48px,8vw,104px) clamp(24px,6vw,96px) !important;border-radius:var(--ds-r-xl);background:linear-gradient(160deg,var(--ds-butter),#FFD3C0,var(--ds-butter));border:1px solid var(--ds-line)}
+.cs-study-cta>.cs-container::after,.cs-ready__inner::after{content:"";position:absolute;right:-8%;bottom:-20%;width:min(420px,50vw);aspect-ratio:2/1;pointer-events:none;opacity:.85;background:no-repeat center/contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Cpath d='M6 170 C 80 40, 190 20, 250 90 S 360 170, 394 30' fill='none' stroke='%23F0752F' stroke-width='10' stroke-linecap='round'/%3E%3C/svg%3E")}
+.cs-study-cta>.cs-container>*,.cs-ready__inner>*{position:relative;z-index:1}
+.cs-study-cta h2,.cs-ready h2{font-family:var(--ds-font-display) !important;font-weight:var(--ds-fw-display) !important;letter-spacing:-.02em !important;color:var(--ds-ink) !important}
+.cs-study-cta p{color:var(--ds-accent-deep) !important}
+
+/* ---- Shared surfaces: one radius, one border, one shadow -------------------- */
+:is(.svc,.cap,.jcard,.plan,.pkg-phase,.phase,.cs-study-card,.cs-study-icons__item,.rs-card,.co-case,.lead-form,.pf-panel,.samp,.metric-card,.out,.adapt-card,.cs-faq__item,.faq-item,.bpost,.cs-compare-table,.inq-card){border-radius:var(--ds-r-md) !important;border-color:var(--ds-line) !important;box-shadow:none}
+:is(.svc,.cap,.jcard,.plan,.co-case,.bpost,.cs-study-card){background:var(--ds-surface);transition:transform .35s var(--ds-ease),box-shadow .35s var(--ds-ease),border-color .2s}
+:is(.svc,.co-case,.bpost,.plan):hover{transform:translateY(-4px);box-shadow:var(--ds-shadow-sm);border-color:var(--ds-line-strong) !important}
+.plan--featured{border-color:var(--ds-ink) !important;box-shadow:var(--ds-shadow-hard) !important}
+:is(.svc-media,.bthumb,.cs-study-media,.hv-img,.case-visual,.fd-photo,.inq-photo) img{border-radius:inherit}
+:is(.svc-media,.bthumb){border-radius:var(--ds-r-md) var(--ds-r-md) 0 0;overflow:hidden}
+:is(.cs-study-media,.case-visual,.fd-photo,.inq-photo,.hv-img){border-radius:var(--ds-r-organic) !important;overflow:hidden}
+
+/* Legacy section headings -> editorial serif */
+.sec-head .display,.sec-head h2,.cs-study-heading h2,.ind-hero h1{font-family:var(--ds-font-display);font-weight:var(--ds-fw-display);letter-spacing:-.02em;line-height:1.08}
+.sec-head .eyebrow{color:var(--ds-accent-deep)}
+.sec-head p{color:var(--ds-muted)}
+
+/* Pills, chips, tabs */
+:is(.jpill,.samp-chip,.ptab,.blog-cats span,.cs-cats button,.case-cats button,.plan-badge){border-radius:var(--ds-r-pill) !important}
+.blog-cats span.on,.ptab.on,.ptab[aria-selected="true"]{background:var(--ds-ink) !important;color:var(--ds-bg) !important;border-color:var(--ds-ink) !important}
+
+/* ---- Blog article -------------------------------------------------------- */
+.post-body h1,.article h1,.bp-title,.blog-post h1{font-family:var(--ds-font-display);font-weight:var(--ds-fw-display);letter-spacing:-.02em}
+:is(.post-body,.article-body,.blog-post,.bp-body) :is(h2,h3){font-family:var(--ds-font-display);font-weight:var(--ds-fw-display);letter-spacing:-.01em;color:var(--ds-ink)}
+:is(.post-body,.article-body,.blog-post,.bp-body) img{border-radius:var(--ds-r-lg)}
+:is(.post-body,.article-body,.blog-post,.bp-body) a{color:var(--ds-accent-deep);text-decoration:underline;text-underline-offset:3px}
+:is(.post-body,.article-body,.blog-post,.bp-body) blockquote{border-left:3px solid var(--ds-accent-2);padding-left:var(--ds-space-5);font-family:var(--ds-font-display);font-style:italic}
+
+/* ---- Footer -------------------------------------------------------------- */
+.cs-footer{background:var(--ds-bg) !important;background-image:none !important}
+.cs-footer__card{background:var(--ds-bg-alt) !important;border:1px solid var(--ds-line) !important;border-radius:var(--ds-r-xl) !important;box-shadow:none !important;position:relative;overflow:hidden}
+.cs-footer__card::after{content:"";position:absolute;right:-4%;top:-30%;width:min(380px,40vw);aspect-ratio:2/1;pointer-events:none;opacity:.5;background:no-repeat center/contain url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 200'%3E%3Cpath d='M6 170 C 80 40, 190 20, 250 90 S 360 170, 394 30' fill='none' stroke='%23F0752F' stroke-width='8' stroke-linecap='round'/%3E%3C/svg%3E")}
+.cs-footer__card>*{position:relative;z-index:1}
+.cs-footer h4{font-family:var(--ds-font-display);font-weight:var(--ds-fw-display);letter-spacing:0;text-transform:none;font-size:18px;color:var(--ds-ink)}
+.cs-footer a:hover{color:var(--ds-accent-deep)}
+
+/* ---- Inquiry page photo: the stock shot is replaced by the founder portrait in markup */
+.inq-sec{background:var(--ds-band) !important}
+
+/* Footer social links (Instagram / YouTube are placeholders until URLs exist) */
+.cs-social{list-style:none;display:flex;flex-wrap:wrap;gap:10px;margin-top:var(--ds-space-6);padding:0}
+.cs-social a,.cs-social--soon{display:inline-flex;align-items:center;gap:6px;padding:7px 14px;border-radius:var(--ds-r-pill);border:1.5px solid var(--ds-line-strong);font-size:14px;font-weight:var(--ds-fw-medium);color:var(--ds-ink)}
+.cs-social a:hover{border-color:var(--ds-ink);color:var(--ds-accent-deep)}
+.cs-social--soon{color:var(--ds-muted);border-style:dashed;cursor:default}
+.cs-social--soon small{font-size:11px;text-transform:uppercase;letter-spacing:.08em;color:var(--ds-accent-2-ink)}
