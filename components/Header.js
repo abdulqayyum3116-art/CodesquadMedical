@@ -1,7 +1,6 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
 import { usePathname } from 'next/navigation';
-import ThemeToggle from './ThemeToggle';
 
 const BOOKING_URL = 'https://calendly.com/code_squad/30min';
 const PHONE = { href: 'tel:+13073964945', label: '+1 (307) 396-4945' };
@@ -46,8 +45,7 @@ const NAV = [
     ],
   },
   { href: '/blog', label: 'Blogs', match: (p) => p.startsWith('/blog') },
-  { href: '/inquiry', label: 'Contact', match: (p) => p === '/inquiry' },
-  { href: '/work-with-us', label: 'Work With Me', match: (p) => p === '/work-with-us' },
+  { href: '/work-with-us', label: 'Work With Us', match: (p) => p === '/work-with-us' },
 ];
 
 export default function Header() {
@@ -159,9 +157,8 @@ export default function Header() {
   return (
     <header id="header" className={open ? 'sh is-open' : 'sh'}>
       <div className="sh-bar">
-        <a href="/" className="sh-logo" aria-label="CodeSquad AI Solutions — home">
-          <img className="logo-for-light" src="/logo.png" alt="CodeSquad AI Solutions" width="172" height="37" />
-          <img className="logo-for-dark" src="/logo-dark.png" alt="CodeSquad AI Solutions" width="172" height="34" />
+        <a href="/" className="sh-logo" aria-label="MedGrow AI Solutions — home">
+          <img src="/logo-updated.png" alt="MedGrow by CodeSquad" width="169" height="38" />
         </a>
 
         <nav className="sh-nav" aria-label="Main" ref={navRef}>
@@ -172,7 +169,6 @@ export default function Header() {
           <a href={PHONE.href} className="sh-phone" aria-label={`Call us: ${PHONE.label}`}>
             <PhoneIcon /><span className="sh-phone__n">{PHONE.label}</span>
           </a>
-          <ThemeToggle />
           <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="ds-btn ds-btn--sm sh-cta">Book a Consultation</a>
           <button
             ref={btnRef}
@@ -194,7 +190,7 @@ export default function Header() {
         </nav>
         <a href={BOOKING_URL} target="_blank" rel="noopener noreferrer" className="ds-btn sh-panel__cta">Book a Consultation →</a>
         <a href={PHONE.href} className="sh-panel__phone"><PhoneIcon />Call {PHONE.label}</a>
-        <p className="sh-panel__note">Free 30-minute call · or <a href="/inquiry">send an inquiry</a></p>
+        <p className="sh-panel__note">Free 30-minute call · or <a href="/work-with-us">work with us</a></p>
       </div>
       {open ? <div className="sh-scrim" aria-hidden="true" onClick={() => setOpen(false)} /> : null}
     </header>

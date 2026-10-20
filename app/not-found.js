@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Page Not Found | CodeSquad',
+  title: 'Page Not Found | MedGrow',
   description: 'The page you’re looking for doesn’t exist or may have moved.',
   robots: { index: false, follow: true }
 };
@@ -14,7 +14,6 @@ const links = [
   { href: '/process', label: 'Process' },
   { href: '/case-studies', label: 'Case Studies' },
   { href: '/blog', label: 'Blog' },
-  { href: '/inquiry', label: 'Send an Inquiry' },
 ];
 
 export default function NotFound() {
@@ -31,7 +30,7 @@ export default function NotFound() {
           </p>
           <div className="hero-cta reveal" style={{ justifyContent: 'center', marginBottom: 44 }}>
             <a href="/" className="btn btn-dark">Back to Home <Arrow /></a>
-            <a href="/inquiry" className="btn btn-ghost">Send an Inquiry</a>
+            <a href="/work-with-us" className="btn btn-ghost">Work With Us</a>
           </div>
           <nav className="reveal" aria-label="Popular pages" style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '10px 22px' }}>
             {links.map((l) => (

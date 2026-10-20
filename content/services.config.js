@@ -1,4 +1,4 @@
-// Service pages (/services/[slug]). Content only describes services CodeSquad already offers;
+// Service pages (/services/[slug]). Content only describes services MedGrow already offers;
 // proof uses figures that already appear in the published case studies. No new statistics.
 
 export const CASES = {
@@ -20,7 +20,7 @@ export const SERVICES = [
     title: 'SEO for medical practices',
     h1: 'Show up when patients search for your treatments.',
     lead: 'Local SEO, treatment pages and content that match what patients actually type, so your practice appears in Google Search and Maps for the care you want to be known for.',
-    img: '/images/patient-growth/blog-editorial.png', imgAlt: 'CodeSquad content workspace used to plan and publish SEO articles',
+    img: '/images/patient-growth/blog-editorial.png', imgAlt: 'MedGrow content workspace used to plan and publish SEO articles',
     who: ['Med spas promoting specific treatments', 'Dental practices growing new-patient exams and high-value care', 'Medical clinics competing in local search', 'Plastic surgery practices with long research journeys'],
     included: [
       ['Google Business Profile & local SEO', 'A complete, active profile and consistent local listings so you appear in Maps and the local pack.'],
@@ -37,7 +37,7 @@ export const SERVICES = [
     title: 'AEO & GEO: visibility in AI search',
     h1: 'Be the practice AI assistants recommend.',
     lead: 'Patients now ask ChatGPT, Gemini and Google\'s AI Overviews which clinic to choose. Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) structure your content so these systems can find it, trust it and cite it.',
-    img: '/images/patient-growth/blog-editorial.png', imgAlt: 'CodeSquad editorial workspace with AI search scoring',
+    img: '/images/patient-growth/blog-editorial.png', imgAlt: 'MedGrow editorial workspace with AI search scoring',
     who: ['Practices already doing SEO that want to appear in AI answers', 'Specialties where patients research for weeks or months', 'Clinics with strong expertise that isn\'t showing up online'],
     included: [
       ['Answer-ready content', 'Clear, structured answers to the questions patients ask about treatments, costs and recovery.'],
@@ -54,7 +54,7 @@ export const SERVICES = [
     title: 'Paid advertising for medical practices',
     h1: 'Ads that point to the treatment, not the homepage.',
     lead: 'Treatment-based Google and Meta campaigns, each paired with its own landing page and instant follow-up, so ad spend goes towards patients who are ready to book.',
-    img: '/images/patient-growth/google-ads-workspace.png', imgAlt: 'CodeSquad Google Ads workspace showing campaigns, ad groups and approval status',
+    img: '/images/patient-growth/google-ads-workspace.png', imgAlt: 'MedGrow Google Ads workspace showing campaigns, ad groups and approval status',
     who: ['Practices launching or promoting a specific treatment', 'Clinics that need enquiries while SEO builds', 'Teams that can\'t see which ads produce appointments'],
     included: [
       ['Google Search campaigns', 'Built around treatment and location searches with clear intent.'],
@@ -71,7 +71,7 @@ export const SERVICES = [
     title: 'Website & landing page design',
     h1: 'A website that earns the enquiry.',
     lead: 'Clear, credible pages for each treatment, with the answers, people and booking options a patient looks for before they reach out. Built to load fast and connect to your follow-up.',
-    img: '/images/patient-growth/landing-page-weight-loss.png', imgAlt: 'Example treatment landing page built by CodeSquad',
+    img: '/images/patient-growth/landing-page-weight-loss.png', imgAlt: 'Example treatment landing page built by MedGrow',
     who: ['Practices with an outdated or generic website', 'Clinics running ads to a homepage', 'New practices that need to look established from day one'],
     included: [
       ['Treatment landing pages', 'One page per treatment or procedure, designed around a single next step.'],
@@ -88,7 +88,7 @@ export const SERVICES = [
     title: 'Instant follow-up, nurture & CRM',
     h1: 'Answer every enquiry in seconds, and keep following up.',
     lead: 'Every new enquiry gets a text and email with a booking link right away, then a structured follow-up sequence. Leads, conversations and bookings sit in one CRM and one live dashboard.',
-    img: '/images/patient-growth/crm-dashboard.png', imgAlt: 'CodeSquad patient growth dashboard showing leads, follow-up and delivery health',
+    img: '/images/patient-growth/crm-dashboard.png', imgAlt: 'MedGrow patient growth dashboard showing leads, follow-up and delivery health',
     who: ['Practices that miss after-hours enquiries', 'Front desks too busy to follow up consistently', 'Owners who want one view of leads and bookings'],
     included: [
       ['Instant text & email reply', 'A reply with a booking link the moment someone enquires, day or night.'],

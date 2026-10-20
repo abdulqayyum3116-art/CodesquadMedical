@@ -2,8 +2,8 @@ import { SERVICES } from '../../content/services.config';
 import './services.css';
 
 export const metadata = {
-  title: 'Services — SEO, AEO & GEO, Paid Ads, Websites, Follow-up | CodeSquad AI Solutions',
-  description: 'Healthcare marketing services from CodeSquad AI Solutions: medical SEO, AEO & GEO for AI search, paid advertising, website design and instant follow-up with CRM.',
+  title: 'Services — SEO, AEO & GEO, Paid Ads, Websites, Follow-up | MedGrow AI Solutions',
+  description: 'Healthcare marketing services from MedGrow AI Solutions: medical SEO, AEO & GEO for AI search, paid advertising, website design and instant follow-up with CRM.',
 };
 
 const STAGES = [

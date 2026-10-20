@@ -9,7 +9,7 @@ export function generateStaticParams() { return SERVICES.map((s) => ({ slug: s.s
 export function generateMetadata({ params }) {
   const s = getService(params.slug);
   if (!s) return {};
-  return { title: `${s.title} | CodeSquad AI Solutions`, description: s.lead };
+  return { title: `${s.title} | MedGrow AI Solutions`, description: s.lead };
 }
 
 export default function ServicePage({ params }) {

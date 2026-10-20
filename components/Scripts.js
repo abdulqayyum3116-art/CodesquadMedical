@@ -29,7 +29,7 @@ export default function Scripts() {
     const onScrollHeader = () => header && header.classList.toggle('scrolled', window.scrollY > 20);
     on(window, 'scroll', onScrollHeader); onScrollHeader();
     // white nav text over dark heros (home, aesthetics, case-study detail) until scrolled
-    const darkPaths = ['/', '/aesthetics', '/clinics', '/industry', '/process', '/blog', '/case-studies', '/inquiry'];
+    const darkPaths = ['/', '/aesthetics', '/clinics', '/industry', '/process', '/blog', '/case-studies'];
     const darkHero = darkPaths.indexOf(path) > -1 || path.startsWith('/case-studies/');
     if (header) header.classList.toggle('header-on-dark', darkHero);
 
@@ -65,6 +65,19 @@ export default function Scripts() {
     // Curves outside a reveal block draw when they scroll into view.
     document.querySelectorAll('.ds-curve').forEach((el) => { if (!el.closest('.reveal')) io.observe(el); });
     cleanups.push(() => io.disconnect());
+
+    /* home "system" list: the open item's progress bar fills, then the next item opens (CSS drives the timing) */
+    document.querySelectorAll('.hm-sys-grid').forEach((grid) => {
+      const radios = Array.from(grid.querySelectorAll('.hm-sys-radio'));
+      if (!radios.length || reduce) return;
+      const so = new IntersectionObserver(([e]) => grid.classList.toggle('is-live', e.isIntersecting), { threshold: 0.35 });
+      so.observe(grid); cleanups.push(() => so.disconnect());
+      on(grid, 'animationend', (e) => {
+        if (e.animationName !== 'hm-sys-fill') return;
+        const i = radios.findIndex((r) => r.checked);
+        radios[(i + 1) % radios.length].checked = true;
+      });
+    });
 
     /* vertical scroll timeline: beam follows scroll, cards activate as it passes */
     document.querySelectorAll('.jtimeline').forEach((tl) => {

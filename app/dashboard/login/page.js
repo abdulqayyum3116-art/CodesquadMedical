@@ -1,7 +1,7 @@
 import { loginAction } from '../actions';
 
 export const dynamic = 'force-dynamic';
-export const metadata = { title: 'Dashboard login | CodeSquad', robots: { index: false, follow: false } };
+export const metadata = { title: 'Dashboard login | MedGrow', robots: { index: false, follow: false } };
 
 export default function LoginPage({ searchParams }) {
   const err = searchParams?.error;

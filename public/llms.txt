@@ -1,6 +1,6 @@
-# CodeSquad AI Solutions
+# MedGrow AI Solutions
 
-> CodeSquad AI Solutions builds connected patient growth systems for medical practices — medical clinics, med spas and aesthetic clinics, dental practices and plastic surgery practices. Services: medical SEO, AEO & GEO (visibility in AI search such as ChatGPT, Gemini and Google AI Overviews), paid advertising (Google & Meta), website and landing page design, and instant follow-up with CRM and a live dashboard — built into the practice's existing tools. Positioning: "Found. Chosen. Booked."
+> MedGrow AI Solutions builds connected patient growth systems for medical practices — medical clinics, med spas and aesthetic clinics, dental practices and plastic surgery practices. Services: medical SEO, AEO & GEO (visibility in AI search such as ChatGPT, Gemini and Google AI Overviews), paid advertising (Google & Meta), website and landing page design, and instant follow-up with CRM and a live dashboard — built into the practice's existing tools. Positioning: "Found. Chosen. Booked."
 
 For the complete text of the main pages, case studies and articles in one file, see [/llms-full.txt](https://www.codesquad.ai/llms-full.txt).
 
@@ -11,7 +11,6 @@ For the complete text of the main pages, case studies and articles in one file, 
 - [How the process works](https://www.codesquad.ai/process): The one-time Build phase followed by a monthly Grow retainer, with the detailed clinic flows (campaigns, messaging, CRM, Google Business Profile).
 - [Founder — Shahzaib Hamid](https://www.codesquad.ai/founder): Founder & CEO profile — PhD in Applied AI, clinical gait-analysis research (IEEE Access 2024, ICT Express 2026).
 - [Work with us](https://www.codesquad.ai/work-with-us): Application form for medical practices; replies usually within one business day.
-- [Contact](https://www.codesquad.ai/inquiry): Short inquiry form. Consultations can also be booked directly via Calendly (https://calendly.com/code_squad/30min).
 
 ## Services
 

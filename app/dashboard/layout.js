@@ -5,7 +5,7 @@ export const dynamic = 'force-dynamic';
 export const fetchCache = 'force-no-store';
 
 export const metadata = {
-  title: 'Dashboard | CodeSquad',
+  title: 'Dashboard | MedGrow',
   robots: { index: false, follow: false },
 };
 

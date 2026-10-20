@@ -13,8 +13,8 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const p = await getCase(params.slug);
-  if (!p) return { title: 'Case Study | CodeSquad AI Solutions' };
-  return { title: `${p.name} — Case Study | CodeSquad AI Solutions`, description: p.tagline };
+  if (!p) return { title: 'Case Study | MedGrow AI Solutions' };
+  return { title: `${p.name} — Case Study | MedGrow AI Solutions`, description: p.tagline };
 }
 
 const CallArrow = () => (

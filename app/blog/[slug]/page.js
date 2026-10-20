@@ -13,8 +13,8 @@ export async function generateStaticParams() {
 
 export async function generateMetadata({ params }) {
   const p = await getPost(params.slug);
-  if (!p) return { title: 'Article | CodeSquad AI Solutions' };
-  return { title: `${p.title} | CodeSquad AI Solutions`, description: p.excerpt };
+  if (!p) return { title: 'Article | MedGrow AI Solutions' };
+  return { title: `${p.title} | MedGrow AI Solutions`, description: p.excerpt };
 }
 
 const BOOKING_URL = 'https://calendly.com/code_squad/30min';
@@ -46,7 +46,7 @@ function About({ post }) {
       <aside className="bl-about" aria-label="About the publisher">
         <img src="/founder.jpeg" alt="" width="72" height="72" />
         <div>
-          <p className="bl-about-k">About CodeSquad AI Solutions</p>
+          <p className="bl-about-k">About MedGrow AI Solutions</p>
           <p>We help medical clinics, med spas, dental practices and plastic surgeons get found, chosen and booked. Founded by <a href="/founder">Dr. Shahzaib Hamid</a>, PhD in Applied AI.</p>
           {service ? <p className="bl-about-svc">Related service: <a href={`/services/${service.slug}`}>{service.name} →</a></p> : null}
         </div>

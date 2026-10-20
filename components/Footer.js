@@ -78,10 +78,9 @@ export default function Footer() {
         <div className="cs-footer__grid">
           <div className="cs-footer__about">
             <a className="cs-brand" href="/">
-              <img className="cs-logo logo-for-light" src="/logo.png" alt="CodeSquad AI Solutions" width="190" height="44" />
-              <img className="cs-logo logo-for-dark" src="/logo-dark.png" alt="CodeSquad AI Solutions" width="190" height="38" />
+              <img className="cs-logo" src="/logo-updated.png" alt="MedGrow by CodeSquad" width="215" height="48" />
             </a>
-            <p>CodeSquad AI Solutions helps medical clinics, med spas, dental practices and plastic surgeons get found, chosen and booked.</p>
+            <p>MedGrow AI Solutions helps medical clinics, med spas, dental practices and plastic surgeons get found, chosen and booked.</p>
             <a className="cs-btn cs-btn--primary" href="https://calendly.com/code_squad/30min" target="_blank" rel="noopener noreferrer"><PhoneIcon /> Book a Consultation</a>
             <ul className="cs-social" aria-label="Social media">
               {SOCIAL.map((s) => (
@@ -102,7 +101,6 @@ export default function Footer() {
               <li><a href="/case-studies">Case Studies</a></li>
               <li><a href="/blog">Blog</a></li>
               <li><a href="/work-with-us">Work With Us</a></li>
-              <li><a href="/inquiry">Contact</a></li>
             </ul>
           </div>
           <div>
@@ -133,7 +131,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="cs-footer__bottom">
-          <span>© 2026 CodeSquad AI Solutions. All rights reserved.</span>
+          <span>© 2026 MedGrow AI Solutions. All rights reserved.</span>
           <span>Found. Chosen. Booked.</span>
         </div>
        </div>

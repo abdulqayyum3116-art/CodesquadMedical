@@ -1,8 +1,8 @@
 import './fcb.css';
 
 export const metadata = {
-  title: 'Found. Chosen. Booked. — The Patient Growth System | CodeSquad AI Solutions',
-  description: 'How CodeSquad AI Solutions finds and fixes the leaks between a patient search and a booked appointment, for clinics, med spas, dental and plastic surgery practices. Backed by the Clinic Transformation Guarantee.',
+  title: 'Found. Chosen. Booked. — The Patient Growth System | MedGrow AI Solutions',
+  description: 'How MedGrow AI Solutions finds and fixes the leaks between a patient search and a booked appointment, for clinics, med spas, dental and plastic surgery practices. Backed by the Clinic Transformation Guarantee.',
 };
 
 const BOOKING_URL = 'https://calendly.com/code_squad/30min';

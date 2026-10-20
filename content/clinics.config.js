@@ -125,7 +125,7 @@ export default {
   ],
   proofQuotes: [
     {
-      text: 'CodeSquad connected our ads, CRM and follow-up into one system. Every enquiry now gets an instant reply, and I can see the exact ad behind each booking — nothing slips through.',
+      text: 'MedGrow connected our ads, CRM and follow-up into one system. Every enquiry now gets an instant reply, and I can see the exact ad behind each booking — nothing slips through.',
       initials: 'HM',
       name: 'Harmony Med Spa',
       role: 'Sarasota, FL · Aesthetics'
@@ -152,7 +152,7 @@ export default {
       '60-second automated SMS &amp; email follow-up, day or night',
       '14-day nurture that stops the moment a patient books'
     ],
-    quote: { text: 'CodeSquad transitioned us from fragmented, manual follow-up to a fully automated system — every lead answered and tracked.', attribution: 'Hayden, Harmony Med Spa' },
+    quote: { text: 'MedGrow transitioned us from fragmented, manual follow-up to a fully automated system — every lead answered and tracked.', attribution: 'Hayden, Harmony Med Spa' },
     image: '/uploads/case-studies/harmony-medspa-lobby.jpg',
     imageAlt: 'Harmony Med Spa reception and waiting lounge'
   },

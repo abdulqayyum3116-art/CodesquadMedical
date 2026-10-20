@@ -2,8 +2,8 @@ import ApplicationForm from '../../components/ApplicationForm';
 import './work-with-us.css';
 
 export const metadata = {
-  title: 'Work With Us — Apply | CodeSquad AI Solutions',
-  description: 'Apply to work with CodeSquad AI Solutions. We work with medical clinics, med spas, dental practices and plastic surgery practices that want to be found, chosen and booked.',
+  title: 'Work With Us — Apply | MedGrow AI Solutions',
+  description: 'Apply to work with MedGrow AI Solutions. We work with medical clinics, med spas, dental practices and plastic surgery practices that want to be found, chosen and booked.',
 };
 
 const FITS = [
@@ -22,7 +22,7 @@ export default function WorkWithUsPage() {
           <div className="wu-hero-copy">
             <span className="ds-eyebrow">Work with us</span>
             <h1 id="wu-title" className="ds-h1 wu-title">We work with medical practices that want to be found, chosen and <span className="ds-underline">booked</span>.</h1>
-            <p className="ds-lead">CodeSquad AI Solutions builds one connected patient growth system (advertising, SEO, AEO and GEO, landing pages and instant follow-up) inside the tools your practice already uses. We take on a small number of practices at a time, so we ask a few questions first to make sure we're the right fit.</p>
+            <p className="ds-lead">MedGrow AI Solutions builds one connected patient growth system (advertising, SEO, AEO and GEO, landing pages and instant follow-up) inside the tools your practice already uses. We take on a small number of practices at a time, so we ask a few questions first to make sure we're the right fit.</p>
             <div className="wu-hero-cta">
               <a href="#apply" className="ds-btn">Start your application</a>
               <a href="https://calendly.com/code_squad/30min" target="_blank" rel="noopener noreferrer" className="ds-btn--text">Or book a consultation →</a>
@@ -32,7 +32,7 @@ export default function WorkWithUsPage() {
           <figure className="wu-portrait">
             <span className="ds-curve wu-portrait-curve" aria-hidden="true" />
             <div className="ds-frame wu-portrait-frame">
-              <img src="/founder.jpeg" alt="Shahzaib Hamid, Founder and CEO of CodeSquad AI Solutions" width="800" height="800" fetchpriority="high" />
+              <img src="/founder.jpeg" alt="Shahzaib Hamid, Founder and CEO of MedGrow AI Solutions" width="800" height="800" fetchpriority="high" />
             </div>
             <figcaption className="wu-portrait-cap">
               <span className="wu-cap-name">Shahzaib Hamid</span>

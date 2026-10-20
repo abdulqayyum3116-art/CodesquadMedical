@@ -1,5 +1,5 @@
 /* ==========================================================================
-   CodeSquad AI Solutions — design system  ("Found. Chosen. Booked.")
+   MedGrow AI Solutions — design system  ("Found. Chosen. Booked.")
    Loaded after globals.css (see app/layout.js), so it re-maps the legacy
    tokens and normalises shared components without touching page markup.
 
@@ -16,6 +16,7 @@
   --ds-surface:#FFFFFF;       /* cards, forms */
   --ds-ink:#1B1B3A;           /* primary: headings, dark buttons, dark bands */
   --ds-ink-2:#2A2A4F;
+  --ds-band:var(--ds-ink);    /* dark section band */
   --ds-text:#33334F;          /* body copy */
   --ds-muted:#5D5D78;
   --ds-line:rgba(27,27,58,.12);
@@ -200,7 +201,7 @@ body:not(:has(.dash)) .display,
 .sh-bar{max-width:var(--ds-max-wide);margin-inline:auto;padding-inline:var(--ds-gutter);height:76px;display:flex;align-items:center;gap:var(--ds-space-6);transition:height .25s var(--ds-ease)}
 #header.sh.scrolled .sh-bar{height:66px}
 .sh-logo{display:flex;align-items:center;flex-shrink:0;border-radius:8px}
-.sh-logo img{height:34px;width:auto;display:block}
+.sh-logo img{height:38px;width:auto;display:block}
 
 .sh-nav{margin-inline:auto}
 .sh-list,.sh-panel__list{list-style:none;margin:0;padding:0}
@@ -248,7 +249,7 @@ body.sh-lock{overflow:hidden}
 @media (min-width:1081px){.sh-panel,.sh-scrim{display:none!important}}
 @media (max-width:520px){
   .sh-bar{height:66px}
-  .sh-logo img{height:28px}
+  .sh-logo img{height:30px}
   .sh-actions .sh-cta{display:none}   /* CTA moves into the menu + the sticky mobile bar */
 }
 

@@ -181,7 +181,7 @@ export default function ApplicationForm({ source = '' }) {
       <div className={errors.consent ? 'wu-consent has-error' : 'wu-consent'}>
         <label className="wu-check wu-check--consent">
           <input type="checkbox" name="consent" value="yes" required {...aria('consent')} />
-          <span>I agree that CodeSquad AI Solutions may contact me by email or phone about this application. My details will only be used to respond to this enquiry.</span>
+          <span>I agree that MedGrow AI Solutions may contact me by email or phone about this application. My details will only be used to respond to this enquiry.</span>
         </label>
         {errors.consent ? <p className="wu-err" id="consent-err">{errors.consent}</p> : null}
       </div>

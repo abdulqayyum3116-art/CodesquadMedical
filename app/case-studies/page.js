@@ -3,8 +3,8 @@ import { CASE_SERVICES, SERVICE_FILTERS, INDUSTRY_FILTERS, DEFAULT_INDUSTRY } fr
 import './results.css';
 export const revalidate = 30;
 export const metadata = {
-  title: 'Results & Case Studies | CodeSquad AI Solutions',
-  description: 'Case studies from CodeSquad AI Solutions: patient growth systems, SEO, ads and follow-up for med spas, dental practices and clinics, plus our wider automation work.'
+  title: 'Results & Case Studies | MedGrow AI Solutions',
+  description: 'Case studies from MedGrow AI Solutions: patient growth systems, SEO, ads and follow-up for med spas, dental practices and clinics, plus our wider automation work.'
 };
 
 const Arrow = () => (

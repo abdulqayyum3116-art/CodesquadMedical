@@ -2,7 +2,6 @@ import './globals.css';
 import './design-system.css';
 import './legacy-theme.css';
 import './motion.css';
-import './dark.css';
 import SiteChrome from '../components/SiteChrome';
 
 // Favicon comes from the file-based convention (app/favicon.ico, app/icon.png,
@@ -10,28 +9,21 @@ import SiteChrome from '../components/SiteChrome';
 // favicon indexing doesn't pick up data: URIs, which this used to be.
 export const metadata = {
   metadataBase: new URL('https://www.codesquad.ai'),
-  title: 'CodeSquad AI Solutions — Found. Chosen. Booked.',
-  description: 'CodeSquad builds one connected growth system — ads, landing pages, CRM, 60-second follow-up, booking, SEO content and reporting — built into your existing stack. No rip-and-replace.'
+  title: 'MedGrow AI Solutions — Found. Chosen. Booked.',
+  description: 'MedGrow builds one connected growth system — ads, landing pages, CRM, 60-second follow-up, booking, SEO content and reporting — built into your existing stack. No rip-and-replace.'
 };
 
 export const viewport = {
   width: 'device-width',
   initialScale: 1,
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#FFFBF5' },
-    { media: '(prefers-color-scheme: dark)', color: '#14142A' },
-  ],
+  themeColor: '#FFFBF5',
 };
 
-// Runs before first paint so the page never flashes the wrong theme:
-// a saved choice (components/ThemeToggle.js) wins, otherwise the OS setting.
-const THEME_SCRIPT = "(function(){try{var t=localStorage.getItem('cs-theme');if(t!=='light'&&t!=='dark'){t=window.matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'}document.documentElement.setAttribute('data-theme',t)}catch(e){document.documentElement.setAttribute('data-theme','light')}})()";
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
-        <script dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }} />
         {/* Google Tag Manager */}
         <script
           dangerouslySetInnerHTML={{

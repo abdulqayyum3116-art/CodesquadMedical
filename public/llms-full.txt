@@ -1,9 +1,9 @@
-# CodeSquad AI Solutions — Full Reference
+# MedGrow AI Solutions — Full Reference
 
 > Complete, unabridged reference content for codesquad.ai: company overview, service pages, pricing, process, every case study, and blog articles in full. Intended for AI assistants, LLMs and research tools that need the full context of this site without crawling it page by page. For a short curated index with links only, see [/llms.txt](https://www.codesquad.ai/llms.txt).
 
 Domain: https://www.codesquad.ai
-Company: CodeSquad — AI automation & software development agency
+Company: MedGrow — AI automation & software development agency
 Founder & CEO: Shahzaib Hamid (PhD, Applied AI)
 Team: 10 engineers, based in Lahore, Pakistan
 Clients served: 20+ companies across the US, Canada, UK and UAE
@@ -12,9 +12,9 @@ LinkedIn (founder): https://www.linkedin.com/in/shahzaibhamid/
 
 ---
 
-## What CodeSquad Does
+## What MedGrow Does
 
-CodeSquad AI Solutions builds connected patient growth systems for medical clinics, med spas, dental practices and plastic surgery practices — medical SEO, AEO & GEO for AI search, paid advertising (Google & Meta), website and landing page design, instant follow-up and CRM dashboards, built into the practice's existing stack. Positioning: "Found. Chosen. Booked." The pitch is explicitly "no rip-and-replace, no new tools to learn": CodeSquad connects to the booking system, practice software or CRM a client already uses rather than forcing a migration.
+MedGrow AI Solutions builds connected patient growth systems for medical clinics, med spas, dental practices and plastic surgery practices — medical SEO, AEO & GEO for AI search, paid advertising (Google & Meta), website and landing page design, instant follow-up and CRM dashboards, built into the practice's existing stack. Positioning: "Found. Chosen. Booked." The pitch is explicitly "no rip-and-replace, no new tools to learn": MedGrow connects to the booking system, practice software or CRM a client already uses rather than forcing a migration.
 
 Core capabilities (from the homepage "What We Do" section):
 - **Websites & software** — fast, modern sites, web apps and custom platforms built to convert and scale.
@@ -36,7 +36,7 @@ Clients/brands referenced publicly: iPromo, ENERGYbits, Gengyve USA, Modern Law,
 
 ## Founder — Shahzaib Hamid
 
-Founder & CEO of CodeSquad, PhD in Applied AI. Leads a team of 10 engineers building production AI systems — patient-growth automation, agentic workflows and marketing intelligence — for small and medium businesses across healthcare, legal, automotive and e-commerce.
+Founder & CEO of MedGrow, PhD in Applied AI. Leads a team of 10 engineers building production AI systems — patient-growth automation, agentic workflows and marketing intelligence — for small and medium businesses across healthcare, legal, automotive and e-commerce.
 
 His PhD research applied deep learning to clinical gait analysis for remote patient care; healthcare is described as "where my research started," not just a client vertical.
 
@@ -48,7 +48,7 @@ His PhD research applied deep learning to clinical gait analysis for remote pati
 - *Patient-growth systems for clinics* — ads, instant follow-up, nurture, booking and SEO connected into one system for med spas and dental practices (see Harmony Med Spa and CareInn Dental case studies).
 
 **Experience:**
-- Founder & CEO — CodeSquad (2021 – Now)
+- Founder & CEO — MedGrow (2021 – Now)
 - AI Expert — CODUP (2023 – 2024): AI and automation for healthcare, fintech and SaaS clients
 - AI Faculty & Researcher — Superior University (2016 – 2021): taught and researched AI, machine learning and computer vision
 
@@ -62,7 +62,7 @@ His PhD research applied deep learning to clinical gait analysis for remote pati
 
 ## How the Process Works (Build then Grow)
 
-CodeSquad's engagement model is two phases: a one-time **Build**, then a monthly **Grow** retainer. The same model applies across every industry, configured for it.
+MedGrow's engagement model is two phases: a one-time **Build**, then a monthly **Grow** retainer. The same model applies across every industry, configured for it.
 
 **Phase 1 · Build (one-time):** audit what the client has, design the system, launch it, train the team. Includes: discovery call, audit & opportunity assessment, growth strategy, CRM & stack setup, website & landing pages, automations & follow-up flows, campaign launch, team training.
 
@@ -81,9 +81,9 @@ CodeSquad's engagement model is two phases: a one-time **Build**, then a monthly
 - *How long does the build take?* Depends on scope (campaigns, pages, integrations needed). A timeline is given after the opportunity assessment, before any build work starts; campaigns only launch once tracking and follow-up are tested end to end.
 - *Is there a long-term contract?* No. The build is a one-time fee; after launch, clients move to a monthly growth retainer with no long-term lock-in.
 - *What's included, and what isn't?* Build covers audit, strategy, CRM/stack setup, website/landing pages, automations, campaign launch, team training. Retainer covers ad management, optimization, content & SEO/AEO/GEO, nurture/retention campaigns, reporting, support. Third-party tools (ad spend, CRM licences, SMS/email credits) are billed separately.
-- *Do I have to switch the software I already use?* No. CodeSquad builds into the existing stack — booking system, store platform or CRM — connecting what already works rather than migrating it.
+- *Do I have to switch the software I already use?* No. MedGrow builds into the existing stack — booking system, store platform or CRM — connecting what already works rather than migrating it.
 
-Most clients keep CodeSquad on after launch as their ongoing AI partner, with monthly strategy sessions and evolving systems.
+Most clients keep MedGrow on after launch as their ongoing AI partner, with monthly strategy sessions and evolving systems.
 
 ---
 
@@ -114,7 +114,7 @@ Sample campaigns — Dental track: Dentist Near Me, Weekend Dentist, Dental Impl
 
 Why-us pitch: "Tired of agencies that have never run a clinic?" — booked appointments traced to ad/keyword/campaign, keep existing practice-management/scheduling software, campaigns for check-ups/implants/aligners/urgent visits run within health-advertising rules from day one.
 
-Proof quotes: Harmony Med Spa ("CodeSquad connected our ads, CRM and follow-up into one system... nothing slips through"), CareInn Dental Clinic ("We went live with the whole system already running... the schedule filled from day one").
+Proof quotes: Harmony Med Spa ("MedGrow connected our ads, CRM and follow-up into one system... nothing slips through"), CareInn Dental Clinic ("We went live with the whole system already running... the schedule filled from day one").
 
 FAQ highlights mirror the Aesthetics page: no software switch required, seconds-fast response with 14-day nurture, one-time build fee + monthly retainer pricing with no lock-in, health-advertising-rule compliant.
 
@@ -127,7 +127,7 @@ Stats: 20+ hours/week saved on manual follow-up · 24/7 automated lead capture a
 
 **Challenge:** Harmony MedSpa delivered excellent patient care, but lead management depended heavily on manual follow-up. Enquiries arrived around the clock via website forms, phone, Google Ads and other channels; because the inbox was checked manually between appointments, potential patients could wait hours for a response. There was no structured follow-up for people who enquired but didn't book — once a lead went cold it was often never contacted again. Past patients weren't systematically re-engaged, rebooking reminders were inconsistent, and referrals weren't tracked end to end. Management had no single view of leads, communications, follow-up status or marketing performance. The clinical experience was strong; the operational challenge was speed, consistency and visibility.
 
-**Solution:** CodeSquad built a connected system that captures every lead, responds within 60 seconds, follows up automatically over 14 days, reactivates past patients, and manages rebooking and referrals — all visible on one live dashboard used daily. Stack: Website + Make.com + Airtable + Mandrill + Mailchimp + PatientNow + custom dashboard.
+**Solution:** MedGrow built a connected system that captures every lead, responds within 60 seconds, follows up automatically over 14 days, reactivates past patients, and manages rebooking and referrals — all visible on one live dashboard used daily. Stack: Website + Make.com + Airtable + Mandrill + Mailchimp + PatientNow + custom dashboard.
 
 **Key capabilities:** Capture (every lead across channels) · Respond & Nurture (automated across 14 days) · Track (full visibility in one dashboard).
 
@@ -135,7 +135,7 @@ Stats: 20+ hours/week saved on manual follow-up · 24/7 automated lead capture a
 
 **Before → After:** Response time: hours → under 60 seconds. Follow-up: 20+ hrs/week → under 2. Non-booker follow-up: none → 5-touch automated sequence. Past-patient re-engagement: none → automated by treatment cycle. Visibility: multiple tools → 1 live dashboard.
 
-**Quote:** "CodeSquad has done great work transitioning us from fragmented follow-up to a fully automated system." — Hayden, Harmony MedSpa
+**Quote:** "MedGrow has done great work transitioning us from fragmented follow-up to a fully automated system." — Hayden, Harmony MedSpa
 
 **Conclusion:** The missing piece was never treatment quality — it was a reliable system for responding, following up, re-engaging and tracking every patient opportunity, built without replacing the clinic's existing booking process.
 
@@ -146,7 +146,7 @@ Stats: system live before the first patient (from day one) · 24/7 automated lea
 
 **Challenge:** CareInn launched with no existing patient pipeline, no history of leads, no established follow-up habits and no base of returning patients. Every new patient had to come from website enquiries, phone calls or referrals — with real risk of losing early momentum before the clinic built a reputation, since there was no existing base to fall back on.
 
-**Solution:** CodeSquad built CareInn's patient-growth system from the ground up, live before day one of operation. It captures every lead, responds within 60 seconds, follows up automatically over 14 days, and gives the team full visibility. Stack: Website + Make.com + Airtable + SMS + Email + custom dashboard.
+**Solution:** MedGrow built CareInn's patient-growth system from the ground up, live before day one of operation. It captures every lead, responds within 60 seconds, follows up automatically over 14 days, and gives the team full visibility. Stack: Website + Make.com + Airtable + SMS + Email + custom dashboard.
 
 **Key capabilities:** Launch-ready (live before the first patient) · Respond & Nurture (every enquiry answered and followed up automatically) · Grow (patient volume tracked and growing from day one).
 
@@ -225,7 +225,7 @@ Patients search for microneedling at different decision stages — location-base
 
 **Getting the lead isn't enough** — delayed response cools interest even after a successful ad click. This is why lead generation needs to be paired with automated notifications, CRM, email/SMS sequences, appointment workflows and tracking so the team can respond fast.
 
-**CodeSquad's approach:** integrate SEO, Google Ads, local search, AI-focused strategy, automation and conversion systems into one framework — examining the full patient pathway (SEO supporting Maps visibility, content supporting services, ads directing to the right pages, leads enabling follow-up, analytics tracking opportunity) rather than treating each marketing channel in isolation.
+**MedGrow's approach:** integrate SEO, Google Ads, local search, AI-focused strategy, automation and conversion systems into one framework — examining the full patient pathway (SEO supporting Maps visibility, content supporting services, ads directing to the right pages, leads enabling follow-up, analytics tracking opportunity) rather than treating each marketing channel in isolation.
 
 ---
 
@@ -243,7 +243,6 @@ Patients search for microneedling at different decision stages — location-base
 - /work-with-us — Application form
 - /process — How the growth system works
 - /founder — Founder profile
-- /inquiry — Contact / consultation request
 - /blog — Blog index
 - /blog/{slug} — individual articles (see Blog section above)
 - /case-studies — Case studies index

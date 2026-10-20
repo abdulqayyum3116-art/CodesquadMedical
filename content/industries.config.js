@@ -5,7 +5,7 @@ export const INDUSTRIES = {
   dental: {
     slug: 'dental',
     eyebrow: 'Dental practices',
-    title: 'Dental Practice Marketing | CodeSquad AI Solutions',
+    title: 'Dental Practice Marketing | MedGrow AI Solutions',
     description: 'SEO, AEO & GEO, treatment-based ads, websites and instant follow-up for dental practices, from new-patient exams to implants and aligners.',
     h1: 'More new patients in the chair, from the first enquiry.',
     lead: 'Dental patients range from routine check-ups to considered treatments like implants and aligners. We help your practice show up for each one, earn trust online, and answer every enquiry before it goes cold.',
@@ -24,7 +24,7 @@ export const INDUSTRIES = {
   'plastic-surgery': {
     slug: 'plastic-surgery',
     eyebrow: 'Plastic surgery practices',
-    title: 'Plastic Surgery Marketing | CodeSquad AI Solutions',
+    title: 'Plastic Surgery Marketing | MedGrow AI Solutions',
     description: 'AEO & GEO, SEO, procedure-focused ads, websites and long-cycle nurture for plastic surgery practices whose patients research for months.',
     h1: 'Be recommended, and remembered, through a long decision.',
     lead: 'Surgical patients research carefully, compare surgeons and increasingly ask AI assistants for recommendations. We help your practice be visible, credible and in touch for the whole journey, from first search to consultation.',

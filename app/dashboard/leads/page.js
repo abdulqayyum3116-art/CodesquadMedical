@@ -17,7 +17,7 @@ export default async function LeadsPage({ searchParams }) {
       {loadError ? (
         <div className="dash-note dash-note--err" role="alert">{loadError}</div>
       ) : (
-        <div className="dash-note">Inquiries from the <a href="/inquiry" target="_blank" rel="noopener">/inquiry</a>, <a href="/aesthetics" target="_blank" rel="noopener">/aesthetics</a> <a href="/clinics" target="_blank" rel="noopener">/clinics</a> and <a href="/work-with-us" target="_blank" rel="noopener">/work-with-us</a> pages. {isLive() ? 'Saved in Supabase.' : 'Local development: saved to content/leads.json.'}</div>
+        <div className="dash-note">Inquiries from the <a href="/aesthetics" target="_blank" rel="noopener">/aesthetics</a>, <a href="/clinics" target="_blank" rel="noopener">/clinics</a> and <a href="/work-with-us" target="_blank" rel="noopener">/work-with-us</a> pages. {isLive() ? 'Saved in Supabase.' : 'Local development: saved to content/leads.json.'}</div>
       )}
       <div className="dash-table">
         <div className="dash-tr dash-tr--head dash-tr--leads"><span>Name</span><span>Email</span><span>Source</span><span>Date</span><span>Actions</span></div>
