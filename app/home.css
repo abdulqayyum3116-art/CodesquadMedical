@@ -252,47 +252,6 @@
 /* ---- Platform hub (ring + selectable card) ---- */
 .hm-plat .ds-h2{color:var(--ds-on-dark)}
 .hm-plat-sub{margin-top:var(--ds-space-4);font-family:var(--ds-font-display);font-style:italic;font-size:clamp(18px,1.8vw,22px);color:var(--ds-on-dark-muted)}
-.hm-plat-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,72px);align-items:center;max-width:980px;margin-inline:auto}
-.hm-plat-radio{position:absolute;opacity:0;pointer-events:none}
-.hm-ring{--c1:rgba(255,244,232,.16);--c2:rgba(255,244,232,.16);--c3:rgba(255,244,232,.16);--rot:150deg;position:relative;aspect-ratio:1/1;width:min(100%,420px);margin-inline:auto}
-.hm-plat-grid:has(#hm-p1:checked) .hm-ring{--rot:-90deg;--c1:#A9B88C}
-.hm-plat-grid:has(#hm-p2:checked) .hm-ring{--rot:150deg;--c2:#A9B88C}
-.hm-plat-grid:has(#hm-p3:checked) .hm-ring{--rot:30deg;--c3:#A9B88C}
-.hm-ring-spin{position:absolute;inset:0;transform:rotate(var(--rot));transition:transform .8s var(--ds-ease)}
-.hm-ring-spin::before{content:"";position:absolute;inset:0;border-radius:50%;
-  background:conic-gradient(from -60deg,var(--c1) 0 116deg,transparent 116deg 120deg,var(--c2) 120deg 236deg,transparent 236deg 240deg,var(--c3) 240deg 356deg,transparent 356deg 360deg);
-  -webkit-mask:radial-gradient(circle closest-side,transparent 55%,#000 56%);mask:radial-gradient(circle closest-side,transparent 55%,#000 56%);
-  transition:background .5s}
-.hm-ring-l{position:absolute;inset:0;display:flex;justify-content:center;align-items:flex-start;color:var(--ds-on-dark)}
-.hm-ring-l--2{transform:rotate(120deg)}
-.hm-ring-l--3{transform:rotate(240deg)}
-.hm-ring-l>span{margin-top:8.4%;font-weight:var(--ds-fw-bold);font-size:15px;letter-spacing:.02em;text-align:center;white-space:nowrap;transition:transform .8s var(--ds-ease),color .4s}
-.hm-ring-l--1>span{transform:rotate(calc(var(--rot) * -1))}
-.hm-ring-l--2>span{transform:rotate(calc(var(--rot) * -1 - 120deg))}
-.hm-ring-l--3>span{transform:rotate(calc(var(--rot) * -1 - 240deg))}
-.hm-ring-hub{position:absolute;inset:22%;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;text-align:center;color:var(--ds-on-dark)}
-.hm-ring-hub small{font-size:13px;color:var(--ds-on-dark-muted)}
-.hm-ring-hub strong{font-family:var(--ds-font-display);font-style:italic;font-weight:500;font-size:clamp(26px,2.8vw,34px)}
-.hm-plat-card{display:flex;flex-direction:column;gap:var(--ds-space-3);padding:clamp(20px,3vw,32px);border-radius:var(--ds-r-lg);background:rgba(255,244,232,.07);border:1px solid rgba(255,244,232,.18);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px)}
-.hm-plat-item{display:block;cursor:pointer;padding:var(--ds-space-4) var(--ds-space-5);border-radius:var(--ds-r-md);border:1px solid transparent;transition:background .25s,border-color .25s}
-.hm-plat-item:hover{background:rgba(255,244,232,.06)}
-.hm-plat-t{display:block;font-weight:var(--ds-fw-bold);font-size:18px;color:var(--ds-on-dark)}
-.hm-plat-d{display:none;margin-top:var(--ds-space-2);font-size:var(--ds-fs-small);color:var(--ds-on-dark-muted)}
-.hm-plat-grid:has(#hm-p1:checked) [for="hm-p1"],
-.hm-plat-grid:has(#hm-p2:checked) [for="hm-p2"],
-.hm-plat-grid:has(#hm-p3:checked) [for="hm-p3"]{background:rgba(255,244,232,.1);border-color:rgba(255,244,232,.7)}
-.hm-plat-grid:has(#hm-p1:checked) [for="hm-p1"] .hm-plat-d,
-.hm-plat-grid:has(#hm-p2:checked) [for="hm-p2"] .hm-plat-d,
-.hm-plat-grid:has(#hm-p3:checked) [for="hm-p3"] .hm-plat-d{display:block}
-.hm-plat-grid:has(.hm-plat-radio:focus-visible) .hm-plat-card{box-shadow:var(--ds-focus)}
-.hm-plat-btn{align-self:center;margin-top:var(--ds-space-3)}
-@media (max-width:860px){.hm-plat-grid{grid-template-columns:1fr}.hm-ring{width:min(100%,320px)}}
-
-/* active label sits on the light segment: use dark ink for contrast */
-.hm-plat-grid:has(#hm-p1:checked) .hm-ring-l--1>span,
-.hm-plat-grid:has(#hm-p2:checked) .hm-ring-l--2>span,
-.hm-plat-grid:has(#hm-p3:checked) .hm-ring-l--3>span{color:var(--ds-ink)}
-@media (max-width:860px){.hm-ring-l>span{font-size:13px}}
 
 /* ---- The system: accordion + mock panel ---- */
 .hm-sys-grid{display:grid;grid-template-columns:minmax(280px,.8fr) 1.6fr;gap:clamp(24px,5vw,72px);align-items:center;max-width:1180px;margin-inline:auto}
