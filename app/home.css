@@ -330,3 +330,13 @@
 .hm-sys-grid.is-live:has(#hm-s5:checked) .hm-sys-item:nth-child(5)::after{width:0;animation:hm-sys-fill 4s linear forwards}
 .hm-sys-grid:hover .hm-sys-item::after,.hm-sys-grid:focus-within .hm-sys-item::after{animation-play-state:paused}
 @media (prefers-reduced-motion:reduce){.hm-sys-item::after{animation:none !important;width:0}}
+
+/* Hero photo background: warm cream wash, strongest behind the centred copy so the photo shows at the edges */
+.hm-hero{background:url("/hero-bg.jpg") center/cover no-repeat}
+.hm-hero::before{content:"";position:absolute;inset:0;z-index:0;pointer-events:none;background:radial-gradient(ellipse 55% 70% at 50% 52%,rgba(255,244,232,.9) 0%,rgba(255,244,232,.7) 45%,rgba(255,244,232,.08) 100%),linear-gradient(rgba(255,236,218,.2),rgba(255,236,218,.2))}
+.hm-hero-curve{z-index:0}
+@media (max-width:640px){.hm-hero{background-position:70% center}.hm-hero::before{background:linear-gradient(rgba(255,244,232,.86),rgba(255,244,232,.8))}}
+
+/* Home: let the hero photo show behind the nav until the page is scrolled */
+body:has(.hm-hero) #header.sh:not(.scrolled):not(.is-open){background:transparent}
+body:has(.hm-hero) #header.sh{transition:background-color .25s,border-color .25s,box-shadow .25s}
