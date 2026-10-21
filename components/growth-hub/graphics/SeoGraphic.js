@@ -42,7 +42,7 @@ export default function SeoGraphic({ active, compact }) {
 
     const idle = gsap.timeline({ repeat: -1, delay: 3.4 });
     idle.fromTo(q('.seo-dot'), { scale: 1, autoAlpha: 0.9, transformOrigin: '50% 50%' }, { scale: 2.6, autoAlpha: 0, duration: 1.6, ease: 'power1.out' }, 0);
-    idle.fromTo(me, { boxShadow: '0 0 0 0 rgba(169,184,140,.55)' }, { boxShadow: '0 0 0 1.2cqw rgba(169,184,140,0)', duration: 1.8, ease: 'power1.out' }, 0);
+    idle.fromTo(me, { boxShadow: '0 0 0 0 rgba(255,180,138,.55)' }, { boxShadow: '0 0 0 1.2cqw rgba(255,180,138,0)', duration: 1.8, ease: 'power1.out' }, 0);
     return [tl, idle];
   });
 

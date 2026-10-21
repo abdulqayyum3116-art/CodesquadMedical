@@ -2010,3 +2010,14 @@ h1.hero-title--outcome{max-width:18ch;font-size:clamp(30px,4.2vw,54px);line-heig
 .dash-note a{word-break:break-all}
 .dash-video-link{margin-top:6px}
 .dash-retry{margin-top:10px}
+.cs-footer__follow{display:flex;align-items:center;gap:16px;margin-top:24px}
+.cs-footer__follow h4{margin:0;padding:0;white-space:nowrap}
+.cs-footer__follow h4::after{display:none}
+.cs-footer__follow .cs-social{margin:0;flex-wrap:nowrap;gap:10px}
+.cs-footer .cs-social a,.cs-footer .cs-social--soon{width:40px;height:40px;padding:0;justify-content:center}
+.cs-footer .cs-social svg{width:18px;height:18px}
+.cs-footer h4{position:relative;padding-bottom:10px}
+.cs-footer h4::after{content:"";position:absolute;left:0;bottom:0;width:28px;height:3px;border-radius:3px;background:#F0752F}
+.cs-footer ul a:hover{transform:translateX(3px)}
+.cs-footer ul a{transition:color .2s,transform .2s}
+.cs-footer__tag{font-weight:700;color:var(--ds-ink);letter-spacing:.02em}

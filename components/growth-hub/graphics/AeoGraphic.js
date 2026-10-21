@@ -21,14 +21,14 @@ export default function AeoGraphic({ active, compact }) {
     typeInto(tl, q('.aeo-q')[0], QUESTION, 1.3, 0, resets);
     tl.from(q('.aeo-bar b'), { scaleY: 0.2, stagger: 0.05, duration: 0.3 }, 0);
     tl.from(q('.aeo-feat'), { autoAlpha: 0, scaleY: 0.7, transformOrigin: 'top center', duration: 0.6, ease: MOTION.ease.out }, 1.5);
-    tl.from(q('.aeo-hl'), { backgroundColor: 'rgba(169,184,140,0)', color: '#FFF4E8', duration: 0.6 }, 2.2);
-    tl.from(q('.aeo-ln[data-a="1"]'), { backgroundColor: 'rgba(169,184,140,0)', duration: 0.4 }, 1.6);
+    tl.from(q('.aeo-hl'), { backgroundColor: 'rgba(255,180,138,0)', color: '#FFF4E8', duration: 0.6 }, 2.2);
+    tl.from(q('.aeo-ln[data-a="1"]'), { backgroundColor: 'rgba(255,180,138,0)', duration: 0.4 }, 1.6);
     q('.aeo-paa-row').forEach((row, k) => {
       const at = 2.6 + k * 0.8;
       tl.from(row, { autoAlpha: 0.35, y: 6, duration: 0.4 }, at);
       tl.fromTo(row.querySelector('svg'), { rotation: 0 }, { rotation: 180, duration: 0.4, transformOrigin: '50% 50%' }, at + 0.1);
       tl.from(row.querySelector('i'), { scaleX: 0, duration: 0.5, ease: MOTION.ease.out }, at + 0.15);
-      tl.from(q(`.aeo-ln[data-a="${k + 2}"]`), { backgroundColor: 'rgba(169,184,140,0)', duration: 0.4 }, at + 0.15);
+      tl.from(q(`.aeo-ln[data-a="${k + 2}"]`), { backgroundColor: 'rgba(255,180,138,0)', duration: 0.4 }, at + 0.15);
     });
     tl.from(q('.aeo-code'), { autoAlpha: 0, x: 12, duration: 0.6 }, 1.2);
 

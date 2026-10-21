@@ -13,7 +13,7 @@ const PhoneIcon = () => (
 // `menu` adds a dropdown: groups of { heading, items: [{ href, label, note }] }.
 const NAV = [
   { href: '/', label: 'Home', match: (p) => p === '/' },
-  { href: '/fcb', label: 'FCB', title: 'Found. Chosen. Booked. — how the system works', match: (p) => p === '/fcb' },
+  { href: '/fcb', label: 'What we do', title: 'Found. Chosen. Booked. — how the system works', match: (p) => p === '/fcb' },
   {
     href: '/services', label: 'Services', match: (p) => p.startsWith('/services'),
     menu: [

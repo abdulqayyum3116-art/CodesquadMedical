@@ -56,6 +56,12 @@ const flags = {
 };
 
 // Social profiles. An empty url renders a non-clickable "coming soon" placeholder instead of a dead link.
+const SOCIAL_ICONS = {
+  LinkedIn: <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.1c0-1.2 0-2.8-1.7-2.8s-2 1.3-2 2.7V21h-4z" /></svg>,
+  Instagram: <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" /></svg>,
+  YouTube: <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M22 8.2a3 3 0 0 0-2.1-2.1C18 5.6 12 5.6 12 5.6s-6 0-7.9.5A3 3 0 0 0 2 8.2C1.5 10.100 1.5 12 1.5 12s0 1.9.5 3.800a3 3 0 0 0 2.1 2.1c1.9.5 7.9.5 7.9.5s6 0 7.9-.5a3 3 0 0 0 2.1-2.1c.5-1.9.5-3.800.5-3.800s0-1.9-.5-3.800zM10 15V9l5.200 3z" /></svg>,
+};
+
 const SOCIAL = [
   { name: 'LinkedIn', url: 'https://www.linkedin.com/in/shahzaibhamid/' },
   { name: 'Instagram', url: 'https://www.instagram.com/drshah.growth/' },
@@ -81,16 +87,17 @@ export default function Footer() {
               <img className="cs-logo" src="/logo-updated.png" alt="MedGrow by CodeSquad" width="215" height="48" />
             </a>
             <p>MedGrow AI Solutions helps medical clinics, med spas, dental practices and plastic surgeons get found, chosen and booked.</p>
-            <a className="cs-btn cs-btn--primary" href="https://calendly.com/code_squad/30min" target="_blank" rel="noopener noreferrer"><PhoneIcon /> Book a Consultation</a>
+            <div className="cs-footer__follow">
             <ul className="cs-social" aria-label="Social media">
               {SOCIAL.map((s) => (
                 <li key={s.name}>
                   {s.url
-                    ? <a href={s.url} target="_blank" rel="noopener noreferrer">{s.name}</a>
-                    : <span className="cs-social--soon" title={`${s.name} coming soon`}>{s.name}<small>soon</small></span>}
+                    ? <a href={s.url} target="_blank" rel="noopener noreferrer" aria-label={s.name} title={s.name}>{SOCIAL_ICONS[s.name]}</a>
+                    : <span className="cs-social--soon" title={`${s.name} coming soon`}>{SOCIAL_ICONS[s.name]}</span>}
                 </li>
               ))}
             </ul>
+            </div>
           </div>
           <div>
             <h4>Pages</h4>
@@ -132,7 +139,7 @@ export default function Footer() {
         </div>
         <div className="cs-footer__bottom">
           <span>© 2026 MedGrow AI Solutions. All rights reserved.</span>
-          <span>Found. Chosen. Booked.</span>
+          <span className="cs-footer__tag">Found. Chosen. Booked.</span>
         </div>
        </div>
       </div>

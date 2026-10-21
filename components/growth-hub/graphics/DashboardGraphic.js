@@ -40,7 +40,7 @@ export default function DashboardGraphic({ active, compact }) {
     q('.db-mini').forEach((m, i) => {
       const [x, y, r] = FLY[i];
       tl.from(m, { x: x * cq, y: y * cq, rotation: r, scale: 1.7, autoAlpha: 0, duration: 1.0, ease: 'power3.out' }, 0.2 + i * 0.16);
-      tl.from(m, { boxShadow: '0 0 0 0.8cqw rgba(169,184,140,.5)', duration: 0.5 }, 1.1 + i * 0.16);
+      tl.from(m, { boxShadow: '0 0 0 0.8cqw rgba(255,180,138,.5)', duration: 0.5 }, 1.1 + i * 0.16);
     });
     q('.db-kpi').forEach((k, i) => {
       tl.from(k, { autoAlpha: 0, y: 8, duration: 0.4 }, 1.2 + i * 0.1);
