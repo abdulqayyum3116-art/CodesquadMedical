@@ -60,7 +60,7 @@ export default function HubPanel({ items, active, progressRef, onSelect }) {
           <h3 className="gh-title">{item.title}</h3>
           <p className="gh-desc">{item.description}</p>
         </div>
-        <a href="#services" className={`ds-btn gh-cta${last ? ' is-attn' : ''}`}>See how it works</a>
+        <a href="/fcb" className={`ds-btn gh-cta${last ? ' is-attn' : ''}`}>See how it works</a>
       </div>
     </div>
   );

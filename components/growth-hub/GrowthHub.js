@@ -1,10 +1,10 @@
 'use client';
 import { useCallback, useEffect, useRef, useState } from 'react';
+import gsap from 'gsap';
 import './growth-hub.css';
 import './graphics/graphics.css';
 import { HUB_ITEMS } from './hubItems';
 import { MOTION } from './motion.config';
-import { useHubScroll } from './useHubScroll';
 import HubDonut from './HubDonut';
 import HubPanel from './HubPanel';
 
@@ -39,47 +39,126 @@ function StackCard({ item, index, mounted, reduced, onView }) {
 
 export default function GrowthHub() {
   const [active, setActive] = useState(0);
-  const [mode, setMode] = useState(null);       // 'pinned' | 'stacked' once mounted
+  const [mode, setMode] = useState(null);       // 'desktop' | 'stacked' once mounted
   const [reduced, setReduced] = useState(false);
-  const trackRef = useRef(null);
   const stageRef = useRef(null);
   const stackRef = useRef(null);
   const lineRef = useRef(null);
   const pillsRef = useRef(null);
 
-  // Keep the active pill visible in the horizontally scrolling bar.
+  const activeRef = useRef(active);
+  useEffect(() => {
+    activeRef.current = active;
+  }, [active]);
+
+  const posRef = useRef(0);
+  const timerRef = useRef(null);
+  const pausedRef = useRef(false);
+
+  // Keep the active pill visible in the horizontally scrolling bar (mobile).
   useEffect(() => {
     const bar = pillsRef.current;
     const pill = bar?.children[active];
     if (bar && pill && mode === 'stacked') bar.scrollTo({ left: pill.offsetLeft - bar.clientWidth / 2 + pill.offsetWidth / 2, behavior: reduced ? 'auto' : 'smooth' });
   }, [active, mode, reduced]);
 
-  // Which layout is live (mirrors the CSS media queries that show/hide each DOM tree).
+  // Which layout is live (mirrors CSS media queries).
   useEffect(() => {
     const mqMobile = window.matchMedia('(max-width: 767px)');
     const mqReduce = window.matchMedia('(prefers-reduced-motion: reduce)');
-    const sync = () => { setReduced(mqReduce.matches); setMode(mqMobile.matches || mqReduce.matches ? 'stacked' : 'pinned'); };
+    const sync = () => {
+      const red = mqReduce.matches;
+      setReduced(red);
+      setMode(mqMobile.matches || red ? 'stacked' : 'desktop');
+    };
     sync();
-    mqMobile.addEventListener('change', sync); mqReduce.addEventListener('change', sync);
-    return () => { mqMobile.removeEventListener('change', sync); mqReduce.removeEventListener('change', sync); };
+    mqMobile.addEventListener('change', sync);
+    mqReduce.addEventListener('change', sync);
+    return () => {
+      mqMobile.removeEventListener('change', sync);
+      mqReduce.removeEventListener('change', sync);
+    };
   }, []);
 
-  const onPosition = useCallback((pos) => {
+  const applyPosition = useCallback((pos, targetIndex) => {
     const stage = stageRef.current;
     if (!stage) return;
     stage.style.setProperty('--gh-pos', pos.toFixed(4));
-    const p = pos / (N - 1);
+    const p = targetIndex / (N - 1);
     stage.style.setProperty('--gh-prog', p.toFixed(4));
     if (lineRef.current) lineRef.current.style.transform = `scaleY(${p.toFixed(4)})`;
   }, []);
 
-  const scrollToItem = useHubScroll({ trackRef, count: N, enabled: mode === 'pinned', onPosition, onIndex: setActive });
+  const goToIndex = useCallback((targetIndex) => {
+    const currentPos = posRef.current;
+    const currentNorm = ((currentPos % N) + N) % N;
+    let diff = targetIndex - currentNorm;
+    if (diff > N / 2) diff -= N;
+    if (diff < -N / 2) diff += N;
+
+    const targetPos = currentPos + diff;
+
+    gsap.killTweensOf(posRef);
+    gsap.to(posRef, {
+      current: targetPos,
+      duration: MOTION.rotationDuration,
+      ease: MOTION.ease.out,
+      onUpdate: () => {
+        applyPosition(posRef.current, targetIndex);
+      },
+      onComplete: () => {
+        posRef.current = targetPos;
+        applyPosition(targetPos, targetIndex);
+      }
+    });
+
+    setActive(targetIndex);
+  }, [applyPosition]);
+
+  const resetTimer = useCallback(() => {
+    if (timerRef.current) clearTimeout(timerRef.current);
+    if (pausedRef.current || mode === 'stacked' || reduced) return;
+
+    timerRef.current = setTimeout(() => {
+      if (!pausedRef.current && mode !== 'stacked' && !reduced) {
+        const next = (activeRef.current + 1) % N;
+        goToIndex(next);
+        resetTimer();
+      }
+    }, MOTION.autoPlayInterval);
+  }, [goToIndex, mode, reduced]);
+
+  // Start auto-play timer once mounted and layout is desktop
+  useEffect(() => {
+    if (mode === 'desktop' && !reduced) {
+      applyPosition(0, 0);
+      resetTimer();
+    }
+    return () => {
+      if (timerRef.current) clearTimeout(timerRef.current);
+      gsap.killTweensOf(posRef);
+    };
+  }, [mode, reduced, resetTimer, applyPosition]);
 
   const select = useCallback((i) => {
-    if (mode === 'pinned') { if (!scrollToItem(i)) setActive(i); return; }
-    document.getElementById(`gh-card-${HUB_ITEMS[i].id}`)?.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'center' });
-    setActive(i);
-  }, [mode, scrollToItem, reduced]);
+    if (mode === 'stacked') {
+      document.getElementById(`gh-card-${HUB_ITEMS[i].id}`)?.scrollIntoView({ behavior: reduced ? 'auto' : 'smooth', block: 'center' });
+      setActive(i);
+      return;
+    }
+    goToIndex(i);
+    resetTimer();
+  }, [mode, reduced, goToIndex, resetTimer]);
+
+  const onMouseEnter = () => {
+    pausedRef.current = true;
+    if (timerRef.current) clearTimeout(timerRef.current);
+  };
+
+  const onMouseLeave = () => {
+    pausedRef.current = false;
+    resetTimer();
+  };
 
   // Arrow keys move between items within whichever list/donut has focus.
   const onKeyDown = (e) => {
@@ -88,7 +167,7 @@ export default function GrowthHub() {
     const dir = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[e.key];
     if (!dir) return;
     e.preventDefault();
-    const next = Math.min(N - 1, Math.max(0, Number(btn.dataset.i) + dir));
+    const next = (Number(btn.dataset.i) + dir + N) % N;
     select(next);
     const group = btn.dataset.ghBtn;
     setTimeout(() => stageRef.current?.querySelector(`[data-gh-btn="${group}"][data-i="${next}"]`)?.focus({ preventScroll: true }), 60);
@@ -109,19 +188,25 @@ export default function GrowthHub() {
         </div>
       </div>
 
-      {/* Desktop + tablet: pinned scroll story */}
+      {/* Desktop + tablet: auto-advancing wheel story */}
       <div className="gh-pinned">
-        <div className="gh-track" ref={trackRef} style={{ height: `${N * MOTION.vhPerItem}vh` }}>
-          <div className="gh-stage" ref={stageRef} onKeyDown={onKeyDown}>
+        <div className="gh-track">
+          <div
+            className="gh-stage"
+            ref={stageRef}
+            onKeyDown={onKeyDown}
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+          >
             <div className="ds-container ds-container--wide gh-stage-in">
               <HubDonut items={HUB_ITEMS} active={active} onSelect={select} />
-              {mode === 'pinned' ? <HubPanel items={HUB_ITEMS} active={active} progressRef={lineRef} onSelect={select} /> : <div className="gh-card" />}
+              {mode !== 'stacked' ? <HubPanel items={HUB_ITEMS} active={active} progressRef={lineRef} onSelect={select} /> : <div className="gh-card" />}
             </div>
           </div>
         </div>
       </div>
 
-      {/* Mobile + reduced motion: no pinning, stacked cards */}
+      {/* Mobile + reduced motion: stacked cards */}
       <div className="gh-stack" ref={stackRef}>
         <div className="gh-pillbar">
           <div className="gh-pills" ref={pillsRef} role="group" aria-label="Growth system topics">
@@ -138,7 +223,7 @@ export default function GrowthHub() {
             <StackCard key={it.id} item={it} index={i} mounted={mode === 'stacked'} reduced={reduced} onView={onStackView} />
           ))}
         </div>
-        <div className="ds-container gh-stack-cta"><a href="#services" className="ds-btn">See how it works</a></div>
+        <div className="ds-container gh-stack-cta"><a href="/fcb" className="ds-btn">See how it works</a></div>
       </div>
 
       <div className="gh-sr" aria-live="polite" role="status">{`${active + 1} of ${N}: ${HUB_ITEMS[active].title}`}</div>
