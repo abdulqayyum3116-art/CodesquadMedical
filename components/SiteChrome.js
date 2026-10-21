@@ -2,7 +2,6 @@
 import { usePathname } from 'next/navigation';
 import Header from './Header';
 import Footer from './Footer';
-import MobileCta from './MobileCta';
 import Scripts from './Scripts';
 
 export default function SiteChrome({ children }) {
@@ -13,7 +12,6 @@ export default function SiteChrome({ children }) {
       <Header />
       {children}
       <Footer />
-      <MobileCta />
       <Scripts />
     </>
   );
