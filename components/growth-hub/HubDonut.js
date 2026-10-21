@@ -26,12 +26,17 @@ export function arcPath(span, rOut = R_OUT, rIn = R_IN) {
  * Donut with one equal segment per item. The whole ring rotates (CSS var --gh-pos, set by GrowthHub)
  * so the active segment always sits at the focal point (9 o'clock); labels counter-rotate to stay upright.
  */
-export default function HubDonut({ items, active, onSelect }) {
+export default function HubDonut({ items, active, onSelect, onMouseEnter, onMouseLeave }) {
   const n = items.length;
   const seg = 360 / n;
   const d = arcPath(seg - MOTION.donut.gapDeg);
   return (
-    <div className="gh-donut" style={{ '--gh-n': n, '--gh-seg': `${seg}deg`, '--gh-focal': `${MOTION.donut.focalDeg}deg`, '--gh-pop': `${MOTION.donut.popPx}px` }}>
+    <div
+      className="gh-donut"
+      style={{ '--gh-n': n, '--gh-seg': `${seg}deg`, '--gh-focal': `${MOTION.donut.focalDeg}deg`, '--gh-pop': `${MOTION.donut.popPx}px` }}
+      onMouseEnter={onMouseEnter}
+      onMouseLeave={onMouseLeave}
+    >
       <span className="gh-glow" aria-hidden="true" />
       <div className="gh-ring-rot" aria-hidden="true">
         <svg viewBox="0 0 440 440" focusable="false">

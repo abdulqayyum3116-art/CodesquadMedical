@@ -195,11 +195,15 @@ export default function GrowthHub() {
             className="gh-stage"
             ref={stageRef}
             onKeyDown={onKeyDown}
-            onMouseEnter={onMouseEnter}
-            onMouseLeave={onMouseLeave}
           >
             <div className="ds-container ds-container--wide gh-stage-in">
-              <HubDonut items={HUB_ITEMS} active={active} onSelect={select} />
+              <HubDonut
+                items={HUB_ITEMS}
+                active={active}
+                onSelect={select}
+                onMouseEnter={onMouseEnter}
+                onMouseLeave={onMouseLeave}
+              />
               {mode !== 'stacked' ? <HubPanel items={HUB_ITEMS} active={active} progressRef={lineRef} onSelect={select} /> : <div className="gh-card" />}
             </div>
           </div>
